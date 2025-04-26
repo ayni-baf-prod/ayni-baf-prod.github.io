@@ -473,7 +473,7 @@
             .then(commits => {
                 const recentCommitsDiv = document.getElementById('recent-commits');
 
-                commits.slice(0, 5).forEach(commit => {
+                commits.forEach(commit => {
                     const commitMessage = commit.commit.message;
                     const commitAuthorName = commit.commit.author.name;
                     const commitAuthorDate = new Date(commit.commit.author.date).toLocaleDateString();
