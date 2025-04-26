@@ -38,7 +38,6 @@
             min-height: 100vh;
         }
 
-        /* Sidebar Styles */
         .sidebar {
             width: var(--sidebar-width);
             background-color: var(--primary-color);
@@ -87,44 +86,16 @@
             display: block;
         }
 
-        /* Module color indicators */
-        .nav-item.finance {
-            border-left-color: var(--finance-color);
-        }
-        
-        .nav-item.investment {
-            border-left-color: var(--investment-color);
-        }
-        
-        .nav-item.actuarial {
-            border-left-color: var(--actuarial-color);
-        }
-        
-        .nav-item.distribution {
-            border-left-color: var(--distribution-color);
-        }
-        
-        .nav-item.legal {
-            border-left-color: var(--legal-color);
-        }
-        
-        .nav-item.risk {
-            border-left-color: var(--risk-color);
-        }
-        
-        .nav-item.talent {
-            border-left-color: var(--talent-color);
-        }
-        
-        .nav-item.operations {
-            border-left-color: var(--operations-color);
-        }
-        
-        .nav-item.ceo {
-            border-left-color: var(--ceo-color);
-        }
+        .nav-item.finance { border-left-color: var(--finance-color); }
+        .nav-item.investment { border-left-color: var(--investment-color); }
+        .nav-item.actuarial { border-left-color: var(--actuarial-color); }
+        .nav-item.distribution { border-left-color: var(--distribution-color); }
+        .nav-item.legal { border-left-color: var(--legal-color); }
+        .nav-item.risk { border-left-color: var(--risk-color); }
+        .nav-item.talent { border-left-color: var(--talent-color); }
+        .nav-item.operations { border-left-color: var(--operations-color); }
+        .nav-item.ceo { border-left-color: var(--ceo-color); }
 
-        /* Main Content Styles */
         .main-content {
             flex: 1;
             margin-left: var(--sidebar-width);
@@ -146,7 +117,6 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Module Grid on Home Page */
         .module-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -187,44 +157,16 @@
             text-decoration: none;
         }
 
-        /* Module specific header colors */
-        .finance-header {
-            background-color: var(--finance-color);
-        }
-        
-        .investment-header {
-            background-color: var(--investment-color);
-        }
-        
-        .actuarial-header {
-            background-color: var(--actuarial-color);
-        }
-        
-        .distribution-header {
-            background-color: var(--distribution-color);
-        }
-        
-        .legal-header {
-            background-color: var(--legal-color);
-        }
-        
-        .risk-header {
-            background-color: var(--risk-color);
-        }
-        
-        .talent-header {
-            background-color: var(--talent-color);
-        }
-        
-        .operations-header {
-            background-color: var(--operations-color);
-        }
-        
-        .ceo-header {
-            background-color: var(--ceo-color);
-        }
+        .finance-header { background-color: var(--finance-color); }
+        .investment-header { background-color: var(--investment-color); }
+        .actuarial-header { background-color: var(--actuarial-color); }
+        .distribution-header { background-color: var(--distribution-color); }
+        .legal-header { background-color: var(--legal-color); }
+        .risk-header { background-color: var(--risk-color); }
+        .talent-header { background-color: var(--talent-color); }
+        .operations-header { background-color: var(--operations-color); }
+        .ceo-header { background-color: var(--ceo-color); }
 
-        /* Recent Updates Section */
         .recent-updates {
             margin-top: 2rem;
             height: 400px; /* Adjust the height as needed */
@@ -234,53 +176,54 @@
         }
 
         .update-item {
+            display: flex;
+            align-items: center;
             padding: 0.75rem 0;
-            border-bottom: 1px solid var(--light-bg);
+            border-bottom: 1px solid #e1e4e8;
         }
 
-        .update-date {
-            font-size: 0.8rem;
-            color: #777;
+        .update-item img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 1rem;
         }
 
-        /* Table Styles for Data Dictionary */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
+        .update-content {
+            flex: 1;
         }
 
-        .data-table th, .data-table td {
-            padding: 0.75rem;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .data-table th {
-            background-color: var(--light-bg);
+        .commit-message {
             font-weight: 600;
+            margin-bottom: 0.2rem;
         }
 
-        .data-table tr:hover {
-            background-color: rgba(0, 0, 0, 0.02);
+        .commit-meta {
+            font-size: 0.85rem;
+            color: #586069;
         }
 
-        /* Responsive Design */
+        .commit-meta a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .commit-meta a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .sidebar {
                 width: 100%;
                 height: auto;
                 position: relative;
             }
-            
             .main-content {
                 margin-left: 0;
             }
-            
             body {
                 flex-direction: column;
             }
-            
             .module-grid {
                 grid-template-columns: 1fr;
             }
@@ -288,47 +231,25 @@
     </style>
 </head>
 <body>
-    <!-- Sidebar Navigation -->
     <aside class="sidebar">
         <div class="sidebar-header">
             <h2>Moneo Data Dictionary</h2>
             <p>Data Warehouse</p>
         </div>
         <ul class="nav-menu">
-            <li class="nav-item active">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="nav-item finance">
-                <a href="dwh_finance.html">Finance</a>
-            </li>
-            <li class="nav-item investment">
-                <a href="#">Investment</a>
-            </li>
-            <li class="nav-item actuarial">
-                <a href="dwh_actuarial.html">Actuarial</a>
-            </li>
-            <li class="nav-item distribution">
-                <a href="#">Distribution</a>
-            </li>
-            <li class="nav-item legal">
-                <a href="#">Legal</a>
-            </li>
-            <li class="nav-item risk">
-                <a href="#">Risk</a>
-            </li>
-            <li class="nav-item talent">
-                <a href="#">Talent</a>
-            </li>
-            <li class="nav-item operations">
-                <a href="#">Operations</a>
-            </li>
-            <li class="nav-item ceo">
-                <a href="#">CEO</a>
-            </li>
+            <li class="nav-item active"><a href="index.html">Home</a></li>
+            <li class="nav-item finance"><a href="dwh_finance.html">Finance</a></li>
+            <li class="nav-item investment"><a href="dwh_investment.html">Investment</a></li>
+            <li class="nav-item actuarial"><a href="dwh_actuarial.html">Actuarial</a></li>
+            <li class="nav-item distribution"><a href="dwh_distribution.html">Distribution</a></li>
+            <li class="nav-item legal"><a href="dwh_legal.html">Legal</a></li>
+            <li class="nav-item risk"><a href="dwh_risk.html">Risk</a></li>
+            <li class="nav-item talent"><a href="#">Talent</a></li>
+            <li class="nav-item operations"><a href="#">Operations</a></li>
+            <li class="nav-item ceo"><a href="#">CEO</a></li>
         </ul>
     </aside>
 
-    <!-- Main Content Area -->
     <main class="main-content">
         <div class="header">
             <h1>Moneo Datawarehouse Dictionary</h1>
@@ -339,164 +260,102 @@
             <h2>Welcome to the Portal</h2>
             <p>This portal provides a comprehensive view of all data marts in our moneo data warehouse. Use the navigation on the left to explore specific business modules.</p>
             
-            <!-- Module Grid -->
             <div class="module-grid">
-                <!-- Finance Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header finance-header">
-                        <h3>Finance</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Financial data including GL, AP/AR, budgeting, and financial reporting.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="dwh_finance.html">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header finance-header"><h3>Finance</h3></div>
+                    <div class="module-card-body"><p>Financial data including GL, AP/AR, budgeting, and financial reporting.</p></div>
+                    <div class="module-card-footer"><a href="dwh_finance.html">Explore →</a></div>
                 </div>
-                
-                <!-- Investment Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header investment-header">
-                        <h3>Investment</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Investment portfolios, returns, and market analysis data.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="#">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header investment-header"><h3>Investment</h3></div>
+                    <div class="module-card-body"><p>Investment portfolios, returns, and market analysis data.</p></div>
+                    <div class="module-card-footer"><a href="dwh_investment.html">Explore →</a></div>
                 </div>
-                
-                <!-- Actuarial Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header actuarial-header">
-                        <h3>Actuarial</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Risk assessment, pricing models, and actuarial calculations.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="dwh_actuarial.html">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header actuarial-header"><h3>Actuarial</h3></div>
+                    <div class="module-card-body"><p>Risk assessment, pricing models, and actuarial calculations.</p></div>
+                    <div class="module-card-footer"><a href="dwh_actuarial.html">Explore →</a></div>
                 </div>
-                
-                <!-- Distribution Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header distribution-header">
-                        <h3>Distribution</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Sales channels, distribution networks, and partner data.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="#">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header distribution-header"><h3>Distribution</h3></div>
+                    <div class="module-card-body"><p>Sales channels, distribution networks, and partner data.</p></div>
+                    <div class="module-card-footer"><a href="dwh_distribution.html">Explore →</a></div>
                 </div>
-                
-                <!-- Legal Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header legal-header">
-                        <h3>Legal</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Compliance, contracts, and legal documentation data.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="#">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header legal-header"><h3>Legal</h3></div>
+                    <div class="module-card-body"><p>Compliance, contracts, and legal documentation data.</p></div>
+                    <div class="module-card-footer"><a href="dwh_legal.html">Explore →</a></div>
                 </div>
-                
-                <!-- Risk Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header risk-header">
-                        <h3>Risk</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Risk exposure, assessment, and mitigation data.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="#">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header risk-header"><h3>Risk</h3></div>
+                    <div class="module-card-body"><p>Risk exposure, assessment, and mitigation data.</p></div>
+                    <div class="module-card-footer"><a href="dwh_risk.html">Explore →</a></div>
                 </div>
-                
-                <!-- Talent Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header talent-header">
-                        <h3>Talent</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>HR, workforce analytics, and employee performance data.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="#">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header talent-header"><h3>Talent</h3></div>
+                    <div class="module-card-body"><p>HR, workforce analytics, and employee performance data.</p></div>
+                    <div class="module-card-footer"><a href="#">in progress →</a></div>
                 </div>
-                
-                <!-- Operations Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header operations-header">
-                        <h3>Operations</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Business operations, processes, and efficiency metrics.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="#">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header operations-header"><h3>Operations</h3></div>
+                    <div class="module-card-body"><p>Business operations, processes, and efficiency metrics.</p></div>
+                    <div class="module-card-footer"><a href="#">in progress →</a></div>
                 </div>
-                
-                <!-- CEO Module Card -->
                 <div class="module-card">
-                    <div class="module-card-header ceo-header">
-                        <h3>CEO</h3>
-                    </div>
-                    <div class="module-card-body">
-                        <p>Executive dashboards, KPIs, and strategic initiative data.</p>
-                    </div>
-                    <div class="module-card-footer">
-                        <a href="#">Explore &rarr;</a>
-                    </div>
+                    <div class="module-card-header ceo-header"><h3>CEO</h3></div>
+                    <div class="module-card-body"><p>Executive dashboards, KPIs, and strategic initiative data.</p></div>
+                    <div class="module-card-footer"><a href="#">in progress →</a></div>
                 </div>
             </div>
             
-            <!-- Recent Updates Section -->
             <div class="recent-updates">
                 <h2>Recent Updates</h2>
-                <div id="recent-commits"></div>
+                <!-- Commits will be dynamically added here -->
             </div>
         </section>
     </main>
 
     <script>
-        fetch('https://api.github.com/repos/ayni-baf-prod/ayni-baf-prod.github.io/commits')
-            .then(response => response.json())
-            .then(commits => {
-                const recentCommitsDiv = document.getElementById('recent-commits');
+        // Replace with your personal access token (for testing only; use a backend in production)
+        const githubToken = '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';
 
-                commits.forEach(commit => {
-                    const commitMessage = commit.commit.message;
-                    const commitAuthorName = commit.commit.author.name;
-                    const commitAuthorDate = new Date(commit.commit.author.date).toLocaleDateString();
+        fetch('https://api.github.com/repos/ayni-baf-prod/ayni-baf-prod.github.io/commits', {
+            headers: {
+                Authorization: `token ${githubToken}`,
+                Accept: 'application/vnd.github.v3+json',
+            },
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const updatesContainer = document.querySelector('.recent-updates');
+                updatesContainer.innerHTML = '<h2>Recent Updates</h2>'; // Reset the section
 
-                    const updateItemDiv = document.createElement('div');
-                    updateItemDiv.classList.add('update-item');
+                data.forEach(commit => {
+                    const updateItem = document.createElement('div');
+                    updateItem.className = 'update-item';
 
-                    const commitMessageHeader = document.createElement('h4');
-                    commitMessageHeader.textContent = commitMessage;
+                    updateItem.innerHTML = `
+                        <img src="${commit.author?.avatar_url || 'https://via.placeholder.com/32'}" alt="${commit.commit.author.name} avatar">
+                        <div class="update-content">
+                            <div class="commit-message">${commit.commit.message}</div>
+                            <div class="commit-meta">
+                                ${commit.commit.author.name} • ${new Date(commit.commit.author.date).toLocaleString()}
+                            </div>
+                        </div>
+                    `;
 
-                    const commitAuthorParagraph = document.createElement('p');
-                    commitAuthorParagraph.textContent = `Author: ${commitAuthorName}`;
-
-                    const commitDateSpan = document.createElement('span');
-                    commitDateSpan.classList.add('update-date');
-                    commitDateSpan.textContent = commitAuthorDate;
-
-                    updateItemDiv.appendChild(commitMessageHeader);
-                    updateItemDiv.appendChild(commitAuthorParagraph);
-                    updateItemDiv.appendChild(commitDateSpan);
-
-                    recentCommitsDiv.appendChild(updateItemDiv);
+                    updatesContainer.appendChild(updateItem);
                 });
+            })
+            .catch(error => {
+                console.error('Error fetching commits:', error);
+                const updatesContainer = document.querySelector('.recent-updates');
+                updatesContainer.innerHTML += '<p>Failed to load commits. Please check the console for details.</p>';
             });
     </script>
 </body>
