@@ -227,6 +227,10 @@
         /* Recent Updates Section */
         .recent-updates {
             margin-top: 2rem;
+            height: 400px; /* Adjust the height as needed */
+            overflow-y: scroll;
+            padding: 10px;
+            border: 1px solid #ddd;
         }
 
         .update-item {
@@ -327,13 +331,13 @@
     <!-- Main Content Area -->
     <main class="main-content">
         <div class="header">
-            <h1>Enterprise Data Dictionary</h1>
+            <h1>Moneo Datawarehouse Dictionary</h1>
             <p>Access and explore data marts across all business modules</p>
         </div>
 
         <section class="content-area">
-            <h2>Welcome to the Data Dictionary Portal</h2>
-            <p>This portal provides a comprehensive view of all data marts in our enterprise data warehouse. Use the navigation on the left to explore specific business modules.</p>
+            <h2>Welcome to the Portal</h2>
+            <p>This portal provides a comprehensive view of all data marts in our moneo data warehouse. Use the navigation on the left to explore specific business modules.</p>
             
             <!-- Module Grid -->
             <div class="module-grid">
@@ -458,23 +462,42 @@
             <!-- Recent Updates Section -->
             <div class="recent-updates">
                 <h2>Recent Updates</h2>
-                <div class="update-item">
-                    <h4>Finance Data Mart Updated</h4>
-                    <p>Added new tables for quarterly financial reporting</p>
-                    <span class="update-date">April 20, 2025</span>
-                </div>
-                <div class="update-item">
-                    <h4>Actuarial Model Enhancement</h4>
-                    <p>Updated risk assessment tables with new dimensions</p>
-                    <span class="update-date">April 15, 2025</span>
-                </div>
-                <div class="update-item">
-                    <h4>Distribution Channel Analytics</h4>
-                    <p>New partner performance metrics added</p>
-                    <span class="update-date">April 8, 2025</span>
-                </div>
+                <div id="recent-commits"></div>
             </div>
         </section>
     </main>
+
+    <script>
+        fetch('https://api.github.com/repos/ayni-baf-prod/ayni-baf-prod.github.io/commits')
+            .then(response => response.json())
+            .then(commits => {
+                const recentCommitsDiv = document.getElementById('recent-commits');
+
+                commits.slice(0, 5).forEach(commit => {
+                    const commitMessage = commit.commit.message;
+                    const commitAuthorName = commit.commit.author.name;
+                    const commitAuthorDate = new Date(commit.commit.author.date).toLocaleDateString();
+
+                    const updateItemDiv = document.createElement('div');
+                    updateItemDiv.classList.add('update-item');
+
+                    const commitMessageHeader = document.createElement('h4');
+                    commitMessageHeader.textContent = commitMessage;
+
+                    const commitAuthorParagraph = document.createElement('p');
+                    commitAuthorParagraph.textContent = `Author: ${commitAuthorName}`;
+
+                    const commitDateSpan = document.createElement('span');
+                    commitDateSpan.classList.add('update-date');
+                    commitDateSpan.textContent = commitAuthorDate;
+
+                    updateItemDiv.appendChild(commitMessageHeader);
+                    updateItemDiv.appendChild(commitAuthorParagraph);
+                    updateItemDiv.appendChild(commitDateSpan);
+
+                    recentCommitsDiv.appendChild(updateItemDiv);
+                });
+            });
+    </script>
 </body>
 </html>
