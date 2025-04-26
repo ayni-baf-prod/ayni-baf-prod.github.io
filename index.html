@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneo Data Dictionary</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #ecf0f1;
+            --text-color: #333;
+            --sidebar-width: 250px;
+            --header-height: 60px;
+            --finance-color: #27ae60;
+            --investment-color: #f39c12;
+            --actuarial-color: #9b59b6;
+            --distribution-color: #16a085;
+            --legal-color: #c0392b;
+            --risk-color: #2980b9;
+            --talent-color: #d35400;
+            --operations-color: #8e44ad;
+            --ceo-color: #7f8c8d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        .sidebar-header {
+            padding: 0 1rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-header h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        .nav-item {
+            padding: 0.75rem 1rem;
+            border-left: 4px solid transparent;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .nav-item.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Module color indicators */
+        .nav-item.finance {
+            border-left-color: var(--finance-color);
+        }
+        
+        .nav-item.investment {
+            border-left-color: var(--investment-color);
+        }
+        
+        .nav-item.actuarial {
+            border-left-color: var(--actuarial-color);
+        }
+        
+        .nav-item.distribution {
+            border-left-color: var(--distribution-color);
+        }
+        
+        .nav-item.legal {
+            border-left-color: var(--legal-color);
+        }
+        
+        .nav-item.risk {
+            border-left-color: var(--risk-color);
+        }
+        
+        .nav-item.talent {
+            border-left-color: var(--talent-color);
+        }
+        
+        .nav-item.operations {
+            border-left-color: var(--operations-color);
+        }
+        
+        .nav-item.ceo {
+            border-left-color: var(--ceo-color);
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            flex: 1;
+            margin-left: var(--sidebar-width);
+            padding: 1rem;
+        }
+
+        .header {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        .content-area {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Module Grid on Home Page */
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .module-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .module-card-header {
+            color: white;
+            padding: 1rem;
+        }
+
+        .module-card-body {
+            padding: 1rem;
+        }
+
+        .module-card-footer {
+            padding: 0.5rem 1rem;
+            background-color: var(--light-bg);
+            text-align: right;
+        }
+
+        .module-card-footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        /* Module specific header colors */
+        .finance-header {
+            background-color: var(--finance-color);
+        }
+        
+        .investment-header {
+            background-color: var(--investment-color);
+        }
+        
+        .actuarial-header {
+            background-color: var(--actuarial-color);
+        }
+        
+        .distribution-header {
+            background-color: var(--distribution-color);
+        }
+        
+        .legal-header {
+            background-color: var(--legal-color);
+        }
+        
+        .risk-header {
+            background-color: var(--risk-color);
+        }
+        
+        .talent-header {
+            background-color: var(--talent-color);
+        }
+        
+        .operations-header {
+            background-color: var(--operations-color);
+        }
+        
+        .ceo-header {
+            background-color: var(--ceo-color);
+        }
+
+        /* Recent Updates Section */
+        .recent-updates {
+            margin-top: 2rem;
+        }
+
+        .update-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--light-bg);
+        }
+
+        .update-date {
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* Table Styles for Data Dictionary */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .data-table th, .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .data-table th {
+            background-color: var(--light-bg);
+            font-weight: 600;
+        }
+
+        .data-table tr:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            body {
+                flex-direction: column;
+            }
+            
+            .module-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Moneo Data Dictionary</h2>
+            <p>Data Warehouse</p>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item active">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item finance">
+                <a href="dwh_finance.html">Finance</a>
+            </li>
+            <li class="nav-item investment">
+                <a href="#">Investment</a>
+            </li>
+            <li class="nav-item actuarial">
+                <a href="dwh_actuarial.html">Actuarial</a>
+            </li>
+            <li class="nav-item distribution">
+                <a href="#">Distribution</a>
+            </li>
+            <li class="nav-item legal">
+                <a href="#">Legal</a>
+            </li>
+            <li class="nav-item risk">
+                <a href="#">Risk</a>
+            </li>
+            <li class="nav-item talent">
+                <a href="#">Talent</a>
+            </li>
+            <li class="nav-item operations">
+                <a href="#">Operations</a>
+            </li>
+            <li class="nav-item ceo">
+                <a href="#">CEO</a>
+            </li>
+            <li class="nav-item">
+                <a href="glossary.html">Glossary</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="header">
+            <h1>Enterprise Data Dictionary</h1>
+            <p>Access and explore data marts across all business modules</p>
+        </div>
+
+        <section class="content-area">
+            <h2>Welcome to the Data Dictionary Portal</h2>
+            <p>This portal provides a comprehensive view of all data marts in our enterprise data warehouse. Use the navigation on the left to explore specific business modules.</p>
+            
+            <!-- Module Grid -->
+            <div class="module-grid">
+                <!-- Finance Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header finance-header">
+                        <h3>Finance</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Financial data including GL, AP/AR, budgeting, and financial reporting.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="dwh_finance.html">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Investment Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header investment-header">
+                        <h3>Investment</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Investment portfolios, returns, and market analysis data.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="#">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Actuarial Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header actuarial-header">
+                        <h3>Actuarial</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Risk assessment, pricing models, and actuarial calculations.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="dwh_actuarial.html">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Distribution Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header distribution-header">
+                        <h3>Distribution</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Sales channels, distribution networks, and partner data.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="#">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Legal Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header legal-header">
+                        <h3>Legal</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Compliance, contracts, and legal documentation data.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="#">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Risk Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header risk-header">
+                        <h3>Risk</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Risk exposure, assessment, and mitigation data.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="#">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Talent Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header talent-header">
+                        <h3>Talent</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>HR, workforce analytics, and employee performance data.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="#">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Operations Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header operations-header">
+                        <h3>Operations</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Business operations, processes, and efficiency metrics.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="#">Explore &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- CEO Module Card -->
+                <div class="module-card">
+                    <div class="module-card-header ceo-header">
+                        <h3>CEO</h3>
+                    </div>
+                    <div class="module-card-body">
+                        <p>Executive dashboards, KPIs, and strategic initiative data.</p>
+                    </div>
+                    <div class="module-card-footer">
+                        <a href="#">Explore &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Updates Section -->
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="update-item">
+                    <h4>Finance Data Mart Updated</h4>
+                    <p>Added new tables for quarterly financial reporting</p>
+                    <span class="update-date">April 20, 2025</span>
+                </div>
+                <div class="update-item">
+                    <h4>Actuarial Model Enhancement</h4>
+                    <p>Updated risk assessment tables with new dimensions</p>
+                    <span class="update-date">April 15, 2025</span>
+                </div>
+                <div class="update-item">
+                    <h4>Distribution Channel Analytics</h4>
+                    <p>New partner performance metrics added</p>
+                    <span class="update-date">April 8, 2025</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
