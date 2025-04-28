@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang='en-us' xmlns='http://www.w3.org/1999/xhtml' >
 <head>
-<title>MONEO Risk</title>
+<title>MONEO &#45; Risk</title>
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
 <link rel='shortcut icon' href='https://dbschema.com/images/favicon.ico'>
@@ -239,9 +239,9 @@ th {
 <!-- == Legend == -->
 <g transform='translate(10,10)'>
   <rect x='10' y='10' width='230' height='56' rx='6' ry='6' style='fill:url(#legendGradient);filter:url(#shadow);'/> 
-  <text x='20' y='25' class='legendTitle' >MONEO Risk</text> 
+  <text x='20' y='25' class='legendTitle' >MONEO - Risk</text> 
   <text x='20' y='39' class='legendSubTitle'><tspan>Table comments as mouse-over tooltips.</tspan></text> 
-  <a xlink:href='index.html'><text x='20' y='53' class='legendSubTitle'><tspan>Go Home</tspan></text></a>
+  <a xlink:href='index.html'><text x='20' y='53' class='legendSubTitle'><tspan>Go Home</tspan></text></a> 
 </g>
 
 <g transform='translate(0,110)'>
@@ -269,12 +269,20 @@ fact_risk_reinsurance ref lk_block ( id_block )</title>
 <path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,576L 688,576' ><title>Fk fk_fact_risk_reinsurance_lk_block
 fact_risk_reinsurance ref lk_block ( id_block )</title></path>
 <text x='553' y='571' transform='rotate(0 553,571)' class='relName'>id_block</text>
+<!-- == Fk 'fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_legal_entity' == -->
+<path id='fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_legal_entity'  onmouseover="hghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_legal_entity','risk.fact_risk_reinsurance.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_legal_entity','risk.fact_risk_reinsurance.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 544,736L 952,736Q 960,736 960,744L 960,784' >
+	<title>Fk fk_fact_risk_reinsurance_lk_legal_entity
+fact_risk_reinsurance ref lk_legal_entity ( id_legal_entity )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,736L 952,736Q 960,736 960,744L 960,784' ><title>Fk fk_fact_risk_reinsurance_lk_legal_entity
+fact_risk_reinsurance ref lk_legal_entity ( id_legal_entity )</title></path>
+<text x='553' y='731' transform='rotate(0 553,731)' class='relName'>id_legal_entity</text>
 <!-- == Fk 'fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_product' == -->
-<path id='fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_product'  onmouseover="hghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_product','risk.fact_risk_reinsurance.id_product','moneo.lk_product.id_product'])" onmouseout="uhghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_product','risk.fact_risk_reinsurance.id_product','moneo.lk_product.id_product'])" transform='translate(8,0)' class='scene' d='M 352,912L 352,984Q 352,992 344,992L 280,992Q 272,992 272,1000L 272,1624Q 272,1632 280,1632L 776,1632Q 784,1632 784,1640L 784,1672Q 784,1680 792,1680L 920,1680Q 928,1680 928,1672L 928,1632' >
+<path id='fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_product'  onmouseover="hghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_product','risk.fact_risk_reinsurance.id_product','moneo.lk_product.id_product'])" onmouseout="uhghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_product','risk.fact_risk_reinsurance.id_product','moneo.lk_product.id_product'])" transform='translate(8,0)' class='scene' d='M 352,912L 352,1000Q 352,1008 344,1008L 280,1008Q 272,1008 272,1016L 272,1608Q 272,1616 280,1616L 728,1616Q 736,1616 736,1608L 736,1592Q 736,1584 744,1584L 896,1584' >
 	<title>Fk fk_fact_risk_reinsurance_lk_product
 fact_risk_reinsurance ref lk_product ( id_product )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 352,912L 352,984Q 352,992 344,992L 280,992Q 272,992 272,1000L 272,1624Q 272,1632 280,1632L 776,1632Q 784,1632 784,1640L 784,1672Q 784,1680 792,1680L 920,1680Q 928,1680 928,1672L 928,1632' ><title>Fk fk_fact_risk_reinsurance_lk_product
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 352,912L 352,1000Q 352,1008 344,1008L 280,1008Q 272,1008 272,1016L 272,1608Q 272,1616 280,1616L 728,1616Q 736,1616 736,1608L 736,1592Q 736,1584 744,1584L 896,1584' ><title>Fk fk_fact_risk_reinsurance_lk_product
 fact_risk_reinsurance ref lk_product ( id_product )</title></path>
 <text x='367' y='913' transform='rotate(90 367,913)' class='relName'>id_product</text>
 <!-- == Fk 'fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_reinsurer' == -->
@@ -286,13 +294,13 @@ fact_risk_reinsurance ref lk_reinsurer ( id_reinsurer )</title>
 fact_risk_reinsurance ref lk_reinsurer ( id_reinsurer )</title></path>
 <text x='531' y='459' transform='rotate(270 531,459)' class='relName'>id_reinsurer</text>
 <!-- == Fk 'fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_top_entity' == -->
-<path id='fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_top_entity'  onmouseover="hghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_top_entity','risk.fact_risk_reinsurance.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_top_entity','risk.fact_risk_reinsurance.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 544,832L 656,832' >
+<path id='fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_top_entity'  onmouseover="hghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_top_entity','risk.fact_risk_reinsurance.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_reinsurance_fk_fact_risk_reinsurance_lk_top_entity','risk.fact_risk_reinsurance.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 544,816L 656,816' >
 	<title>Fk fk_fact_risk_reinsurance_lk_top_entity
 fact_risk_reinsurance ref lk_top_entity ( id_top_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,832L 656,832' ><title>Fk fk_fact_risk_reinsurance_lk_top_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,816L 656,816' ><title>Fk fk_fact_risk_reinsurance_lk_top_entity
 fact_risk_reinsurance ref lk_top_entity ( id_top_entity )</title></path>
-<text x='553' y='827' transform='rotate(0 553,827)' class='relName'>id_top_entity</text>
+<text x='553' y='811' transform='rotate(0 553,811)' class='relName'>id_top_entity</text>
 <!-- == Fk 'fact_risk_asset_managers_fk_fact_risk_asset_managers_lk_risk_investment_firm' == -->
 <path id='fact_risk_asset_managers_fk_fact_risk_asset_managers_lk_risk_investment_firm'  onmouseover="hghl(['fact_risk_asset_managers_fk_fact_risk_asset_managers_lk_risk_investment_firm','risk.fact_risk_asset_managers.id_investment_firm','risk.lk_risk_investment_firm.id_investment_firm'])" onmouseout="uhghl(['fact_risk_asset_managers_fk_fact_risk_asset_managers_lk_risk_investment_firm','risk.fact_risk_asset_managers.id_investment_firm','risk.lk_risk_investment_firm.id_investment_firm'])" transform='translate(8,0)' class='scene' d='M 1120,2096L 1120,2208' >
 	<title>Fk fk_fact_risk_asset_managers_lk_risk_investment_firm
@@ -390,11 +398,11 @@ fact_risk_downgrades_default ref lk_asset_class ( id_asset_class )</title>
 fact_risk_downgrades_default ref lk_asset_class ( id_asset_class )</title></path>
 <text x='2137' y='347' transform='rotate(0 2137,347)' class='relName'>id_asset_class</text>
 <!-- == Fk 'fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_block' == -->
-<path id='fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_block'  onmouseover="hghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_block','risk.fact_risk_downgrades_default.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_block','risk.fact_risk_downgrades_default.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1936,336L 1848,336Q 1840,336 1840,328L 1840,248Q 1840,240 1832,240L 888,240Q 880,240 880,248L 880,568Q 880,576 872,576L 800,576' >
+<path id='fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_block'  onmouseover="hghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_block','risk.fact_risk_downgrades_default.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_block','risk.fact_risk_downgrades_default.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1936,336L 1848,336Q 1840,336 1840,328L 1840,248Q 1840,240 1832,240L 888,240Q 880,240 880,248L 880,584Q 880,592 872,592L 800,592' >
 	<title>Fk fk_fact_risk_downgrades_default_lk_block
 fact_risk_downgrades_default ref lk_block ( id_block )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1936,336L 1848,336Q 1840,336 1840,328L 1840,248Q 1840,240 1832,240L 888,240Q 880,240 880,248L 880,568Q 880,576 872,576L 800,576' ><title>Fk fk_fact_risk_downgrades_default_lk_block
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1936,336L 1848,336Q 1840,336 1840,328L 1840,248Q 1840,240 1832,240L 888,240Q 880,240 880,248L 880,584Q 880,592 872,592L 800,592' ><title>Fk fk_fact_risk_downgrades_default_lk_block
 fact_risk_downgrades_default ref lk_block ( id_block )</title></path>
 <text x='1901' y='331' transform='rotate(0 1901,331)' class='relName'>id_block</text>
 <!-- == Fk 'fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_channel' == -->
@@ -405,14 +413,22 @@ fact_risk_downgrades_default ref lk_channel ( id_channel )</title>
 <path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1968,320L 1968,296Q 1968,288 1960,288L 1528,288Q 1520,288 1520,296L 1520,784' ><title>Fk fk_fact_risk_downgrades_default_lk_channel
 fact_risk_downgrades_default ref lk_channel ( id_channel )</title></path>
 <text x='1971' y='315' transform='rotate(270 1971,315)' class='relName'>id_channel</text>
-<!-- == Fk 'fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_top_entity' == -->
-<path id='fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_top_entity'  onmouseover="hghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_top_entity','risk.fact_risk_downgrades_default.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_top_entity','risk.fact_risk_downgrades_default.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 1984,320L 1984,264Q 1984,256 1976,256L 1432,256Q 1424,256 1424,248L 1424,216Q 1424,208 1416,208L 920,208Q 912,208 912,216L 912,488Q 912,496 904,496L 616,496Q 608,496 608,504L 608,808Q 608,816 616,816L 656,816' >
-	<title>Fk fk_fact_risk_downgrades_default_lk_top_entity
-fact_risk_downgrades_default ref lk_top_entity ( id_top_entity )</title>
+<!-- == Fk 'fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_insurance_type' == -->
+<path id='fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_insurance_type'  onmouseover="hghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_insurance_type','risk.fact_risk_downgrades_default.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_insurance_type','risk.fact_risk_downgrades_default.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 1984,320L 1984,264Q 1984,256 1976,256L 1432,256Q 1424,256 1424,248L 1424,216Q 1424,208 1416,208L 904,208Q 896,208 896,216L 896,968Q 896,976 904,976L 904,976Q 912,976 912,984L 912,1024' >
+	<title>Fk fk_fact_risk_downgrades_default_lk_insurance_type
+fact_risk_downgrades_default ref lk_insurance_type ( id_insurance_type )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1984,320L 1984,264Q 1984,256 1976,256L 1432,256Q 1424,256 1424,248L 1424,216Q 1424,208 1416,208L 920,208Q 912,208 912,216L 912,488Q 912,496 904,496L 616,496Q 608,496 608,504L 608,808Q 608,816 616,816L 656,816' ><title>Fk fk_fact_risk_downgrades_default_lk_top_entity
-fact_risk_downgrades_default ref lk_top_entity ( id_top_entity )</title></path>
-<text x='1987' y='315' transform='rotate(270 1987,315)' class='relName'>id_top_entity</text>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1984,320L 1984,264Q 1984,256 1976,256L 1432,256Q 1424,256 1424,248L 1424,216Q 1424,208 1416,208L 904,208Q 896,208 896,216L 896,968Q 896,976 904,976L 904,976Q 912,976 912,984L 912,1024' ><title>Fk fk_fact_risk_downgrades_default_lk_insurance_type
+fact_risk_downgrades_default ref lk_insurance_type ( id_insurance_type )</title></path>
+<text x='1987' y='315' transform='rotate(270 1987,315)' class='relName'>id_insurance_type</text>
+<!-- == Fk 'fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_portfolio' == -->
+<path id='fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_portfolio'  onmouseover="hghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_portfolio','risk.fact_risk_downgrades_default.id_portfolio','moneo.lk_portfolio.id_portfolio'])" onmouseout="uhghl(['fact_risk_downgrades_default_fk_fact_risk_downgrades_default_lk_portfolio','risk.fact_risk_downgrades_default.id_portfolio','moneo.lk_portfolio.id_portfolio'])" transform='translate(8,0)' class='scene' d='M 1968,704L 1968,968Q 1968,976 1960,976L 1928,976Q 1920,976 1920,984L 1920,1464Q 1920,1472 1912,1472L 1240,1472Q 1232,1472 1232,1480L 1232,1504' >
+	<title>Fk fk_fact_risk_downgrades_default_lk_portfolio
+fact_risk_downgrades_default ref lk_portfolio ( id_portfolio )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1968,704L 1968,968Q 1968,976 1960,976L 1928,976Q 1920,976 1920,984L 1920,1464Q 1920,1472 1912,1472L 1240,1472Q 1232,1472 1232,1480L 1232,1504' ><title>Fk fk_fact_risk_downgrades_default_lk_portfolio
+fact_risk_downgrades_default ref lk_portfolio ( id_portfolio )</title></path>
+<text x='1983' y='705' transform='rotate(90 1983,705)' class='relName'>id_portfolio</text>
 <!-- == Fk 'fact_risk_appetite_fk_fact_risk_appetite_lk_block' == -->
 <path id='fact_risk_appetite_fk_fact_risk_appetite_lk_block'  onmouseover="hghl(['fact_risk_appetite_fk_fact_risk_appetite_lk_block','risk.fact_risk_appetite.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_appetite_fk_fact_risk_appetite_lk_block','risk.fact_risk_appetite.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 2496,1296L 2408,1296Q 2400,1296 2400,1288L 2400,728Q 2400,720 2392,720L 792,720Q 784,720 784,712L 784,672' >
 	<title>Fk fk_fact_risk_appetite_lk_block
@@ -526,11 +542,11 @@ fact_risk_cyber ref lk_risk_level ( id_risk_level )</title>
 fact_risk_cyber ref lk_risk_level ( id_risk_level )</title></path>
 <text x='2153' y='1291' transform='rotate(0 2153,1291)' class='relName'>id_risk_level</text>
 <!-- == Fk 'fact_risk_cyber_fk_fact_risk_cyber_lk_block' == -->
-<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_block'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_block','risk.fact_risk_cyber.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_block','risk.fact_risk_cyber.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 2240,1280L 2240,1224Q 2240,1216 2232,1216L 1656,1216Q 1648,1216 1648,1208L 1648,952Q 1648,944 1640,944L 632,944Q 624,944 624,936L 624,648Q 624,640 632,640L 688,640' >
+<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_block'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_block','risk.fact_risk_cyber.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_block','risk.fact_risk_cyber.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 2240,1280L 2240,1224Q 2240,1216 2232,1216L 1656,1216Q 1648,1216 1648,1208L 1648,952Q 1648,944 1640,944L 888,944Q 880,944 880,936L 880,648Q 880,640 872,640L 800,640' >
 	<title>Fk fk_fact_risk_cyber_lk_block
 fact_risk_cyber ref lk_block ( id_block )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2240,1280L 2240,1224Q 2240,1216 2232,1216L 1656,1216Q 1648,1216 1648,1208L 1648,952Q 1648,944 1640,944L 632,944Q 624,944 624,936L 624,648Q 624,640 632,640L 688,640' ><title>Fk fk_fact_risk_cyber_lk_block
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2240,1280L 2240,1224Q 2240,1216 2232,1216L 1656,1216Q 1648,1216 1648,1208L 1648,952Q 1648,944 1640,944L 888,944Q 880,944 880,936L 880,648Q 880,640 872,640L 800,640' ><title>Fk fk_fact_risk_cyber_lk_block
 fact_risk_cyber ref lk_block ( id_block )</title></path>
 <text x='2243' y='1275' transform='rotate(270 2243,1275)' class='relName'>id_block</text>
 <!-- == Fk 'fact_risk_cyber_fk_fact_risk_cyber_lk_channel' == -->
@@ -550,11 +566,11 @@ fact_risk_cyber ref lk_company ( id_company )</title>
 fact_risk_cyber ref lk_company ( id_company )</title></path>
 <text x='2255' y='1681' transform='rotate(90 2255,1681)' class='relName'>id_company</text>
 <!-- == Fk 'fact_risk_cyber_fk_fact_risk_cyber_lk_division' == -->
-<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_division'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_division','risk.fact_risk_cyber.id_division','moneo.lk_division.id_division'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_division','risk.fact_risk_cyber.id_division','moneo.lk_division.id_division'])" transform='translate(8,0)' class='scene' d='M 2208,1648L 2120,1648Q 2112,1648 2112,1656L 2112,1768Q 2112,1776 2104,1776L 1832,1776Q 1824,1776 1824,1768L 1824,1432Q 1824,1424 1816,1424L 1096,1424Q 1088,1424 1088,1416L 1088,1128Q 1088,1120 1096,1120L 1168,1120' >
+<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_division'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_division','risk.fact_risk_cyber.id_division','moneo.lk_division.id_division'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_division','risk.fact_risk_cyber.id_division','moneo.lk_division.id_division'])" transform='translate(8,0)' class='scene' d='M 2208,1648L 2120,1648Q 2112,1648 2112,1656L 2112,1768Q 2112,1776 2104,1776L 1832,1776Q 1824,1776 1824,1768L 1824,1432Q 1824,1424 1816,1424L 1064,1424Q 1056,1424 1056,1416L 1056,1176Q 1056,1168 1064,1168L 1192,1168Q 1200,1168 1200,1160L 1200,1152' >
 	<title>Fk fk_fact_risk_cyber_lk_division
 fact_risk_cyber ref lk_division ( id_division )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2208,1648L 2120,1648Q 2112,1648 2112,1656L 2112,1768Q 2112,1776 2104,1776L 1832,1776Q 1824,1776 1824,1768L 1824,1432Q 1824,1424 1816,1424L 1096,1424Q 1088,1424 1088,1416L 1088,1128Q 1088,1120 1096,1120L 1168,1120' ><title>Fk fk_fact_risk_cyber_lk_division
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2208,1648L 2120,1648Q 2112,1648 2112,1656L 2112,1768Q 2112,1776 2104,1776L 1832,1776Q 1824,1776 1824,1768L 1824,1432Q 1824,1424 1816,1424L 1064,1424Q 1056,1424 1056,1416L 1056,1176Q 1056,1168 1064,1168L 1192,1168Q 1200,1168 1200,1160L 1200,1152' ><title>Fk fk_fact_risk_cyber_lk_division
 fact_risk_cyber ref lk_division ( id_division )</title></path>
 <text x='2162' y='1643' transform='rotate(0 2162,1643)' class='relName'>id_division</text>
 <!-- == Fk 'fact_risk_cyber_fk_fact_risk_cyber_lk_insurance_type' == -->
@@ -565,38 +581,30 @@ fact_risk_cyber ref lk_insurance_type ( id_insurance_type )</title>
 <path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2208,1312L 2136,1312Q 2128,1312 2128,1304L 2128,1240Q 2128,1232 2120,1232L 1880,1232Q 1872,1232 1872,1240L 1872,1432Q 1872,1440 1864,1440L 1032,1440Q 1024,1440 1024,1432L 1024,1152' ><title>Fk fk_fact_risk_cyber_lk_insurance_type
 fact_risk_cyber ref lk_insurance_type ( id_insurance_type )</title></path>
 <text x='2121' y='1307' transform='rotate(0 2121,1307)' class='relName'>id_insurance_type</text>
-<!-- == Fk 'fact_risk_cyber_fk_fact_risk_cyber_lk_legal_entity' == -->
-<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_legal_entity'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_legal_entity','risk.fact_risk_cyber.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_legal_entity','risk.fact_risk_cyber.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 2208,1328L 2152,1328Q 2144,1328 2144,1320L 2144,1032Q 2144,1024 2136,1024L 1896,1024Q 1888,1024 1888,1032L 1888,1448Q 1888,1456 1880,1456L 1064,1456Q 1056,1456 1056,1448L 1056,1176Q 1056,1168 1064,1168L 1144,1168Q 1152,1168 1152,1160L 1152,1080Q 1152,1072 1144,1072L 1080,1072Q 1072,1072 1072,1064L 1072,904Q 1072,896 1064,896L 1056,896' >
-	<title>Fk fk_fact_risk_cyber_lk_legal_entity
-fact_risk_cyber ref lk_legal_entity ( id_legal_entity )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2208,1328L 2152,1328Q 2144,1328 2144,1320L 2144,1032Q 2144,1024 2136,1024L 1896,1024Q 1888,1024 1888,1032L 1888,1448Q 1888,1456 1880,1456L 1064,1456Q 1056,1456 1056,1448L 1056,1176Q 1056,1168 1064,1168L 1144,1168Q 1152,1168 1152,1160L 1152,1080Q 1152,1072 1144,1072L 1080,1072Q 1072,1072 1072,1064L 1072,904Q 1072,896 1064,896L 1056,896' ><title>Fk fk_fact_risk_cyber_lk_legal_entity
-fact_risk_cyber ref lk_legal_entity ( id_legal_entity )</title></path>
-<text x='2141' y='1323' transform='rotate(0 2141,1323)' class='relName'>id_legal_entity</text>
 <!-- == Fk 'fact_risk_cyber_fk_fact_risk_cyber_lk_top_entity' == -->
-<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_top_entity'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_top_entity','risk.fact_risk_cyber.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_top_entity','risk.fact_risk_cyber.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 2352,1280L 2352,1224Q 2352,1216 2360,1216L 2424,1216Q 2432,1216 2432,1208L 2432,1000Q 2432,992 2424,992L 1912,992Q 1904,992 1904,1000L 1904,1464Q 1904,1472 1896,1472L 824,1472Q 816,1472 816,1464L 816,1176Q 816,1168 808,1168L 648,1168Q 640,1168 640,1160L 640,888Q 640,880 648,880L 656,880' >
+<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_top_entity'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_top_entity','risk.fact_risk_cyber.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_top_entity','risk.fact_risk_cyber.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 2208,1328L 2152,1328Q 2144,1328 2144,1320L 2144,1032Q 2144,1024 2136,1024L 1896,1024Q 1888,1024 1888,1032L 1888,1448Q 1888,1456 1880,1456L 824,1456Q 816,1456 816,1448L 816,1176Q 816,1168 808,1168L 648,1168Q 640,1168 640,1160L 640,888Q 640,880 648,880L 656,880' >
 	<title>Fk fk_fact_risk_cyber_lk_top_entity
 fact_risk_cyber ref lk_top_entity ( id_top_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2352,1280L 2352,1224Q 2352,1216 2360,1216L 2424,1216Q 2432,1216 2432,1208L 2432,1000Q 2432,992 2424,992L 1912,992Q 1904,992 1904,1000L 1904,1464Q 1904,1472 1896,1472L 824,1472Q 816,1472 816,1464L 816,1176Q 816,1168 808,1168L 648,1168Q 640,1168 640,1160L 640,888Q 640,880 648,880L 656,880' ><title>Fk fk_fact_risk_cyber_lk_top_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2208,1328L 2152,1328Q 2144,1328 2144,1320L 2144,1032Q 2144,1024 2136,1024L 1896,1024Q 1888,1024 1888,1032L 1888,1448Q 1888,1456 1880,1456L 824,1456Q 816,1456 816,1448L 816,1176Q 816,1168 808,1168L 648,1168Q 640,1168 640,1160L 640,888Q 640,880 648,880L 656,880' ><title>Fk fk_fact_risk_cyber_lk_top_entity
 fact_risk_cyber ref lk_top_entity ( id_top_entity )</title></path>
-<text x='2355' y='1275' transform='rotate(270 2355,1275)' class='relName'>id_top_entity</text>
+<text x='2148' y='1323' transform='rotate(0 2148,1323)' class='relName'>id_top_entity</text>
 <!-- == Fk 'fact_risk_cyber_fk_fact_risk_cyber_lk_day' == -->
-<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_day'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_day','risk.fact_risk_cyber.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_day','risk.fact_risk_cyber.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 2336,1280L 2336,1240Q 2336,1232 2344,1232L 2440,1232Q 2448,1232 2448,1224L 2448,984Q 2448,976 2440,976L 1928,976Q 1920,976 1920,984L 1920,1304Q 1920,1312 1912,1312L 1528,1312Q 1520,1312 1520,1304L 1520,1280' >
+<path id='fact_risk_cyber_fk_fact_risk_cyber_lk_day'  onmouseover="hghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_day','risk.fact_risk_cyber.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_cyber_fk_fact_risk_cyber_lk_day','risk.fact_risk_cyber.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 2352,1280L 2352,1224Q 2352,1216 2360,1216L 2424,1216Q 2432,1216 2432,1208L 2432,1000Q 2432,992 2424,992L 1912,992Q 1904,992 1904,1000L 1904,1304Q 1904,1312 1896,1312L 1528,1312Q 1520,1312 1520,1304L 1520,1280' >
 	<title>Fk fk_fact_risk_cyber_lk_day
 fact_risk_cyber ref lk_day ( id_day )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 2336,1280L 2336,1240Q 2336,1232 2344,1232L 2440,1232Q 2448,1232 2448,1224L 2448,984Q 2448,976 2440,976L 1928,976Q 1920,976 1920,984L 1920,1304Q 1920,1312 1912,1312L 1528,1312Q 1520,1312 1520,1304L 1520,1280' ><title>Fk fk_fact_risk_cyber_lk_day
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 2352,1280L 2352,1224Q 2352,1216 2360,1216L 2424,1216Q 2432,1216 2432,1208L 2432,1000Q 2432,992 2424,992L 1912,992Q 1904,992 1904,1000L 1904,1304Q 1904,1312 1896,1312L 1528,1312Q 1520,1312 1520,1304L 1520,1280' ><title>Fk fk_fact_risk_cyber_lk_day
 fact_risk_cyber ref lk_day ( id_day )</title></path>
-<text x='2339' y='1275' transform='rotate(270 2339,1275)' class='relName'>id_day</text>
+<text x='2355' y='1275' transform='rotate(270 2355,1275)' class='relName'>id_day</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_block' == -->
-<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_block'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_block','risk.fact_risk_counterparty_exposure.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_block','risk.fact_risk_counterparty_exposure.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1168,528L 792,528Q 784,528 784,536L 784,544' >
+<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_block'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_block','risk.fact_risk_counterparty_exposure.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_block','risk.fact_risk_counterparty_exposure.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1168,576L 800,576' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_block
 fact_risk_counterparty_exposure ref lk_block ( id_block )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1168,528L 792,528Q 784,528 784,536L 784,544' ><title>Fk fk_fact_risk_counterparty_exposure_lk_block
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1168,576L 800,576' ><title>Fk fk_fact_risk_counterparty_exposure_lk_block
 fact_risk_counterparty_exposure ref lk_block ( id_block )</title></path>
-<text x='1133' y='523' transform='rotate(0 1133,523)' class='relName'>id_block</text>
+<text x='1133' y='571' transform='rotate(0 1133,571)' class='relName'>id_block</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_channel' == -->
 <path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_channel'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_channel','risk.fact_risk_counterparty_exposure.id_channel','moneo.lk_channel.id_channel'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_channel','risk.fact_risk_counterparty_exposure.id_channel','moneo.lk_channel.id_channel'])" transform='translate(8,0)' class='scene' d='M 1360,672L 1360,792Q 1360,800 1368,800L 1424,800' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_channel
@@ -622,29 +630,37 @@ fact_risk_counterparty_exposure ref lk_division ( id_division )</title>
 fact_risk_counterparty_exposure ref lk_division ( id_division )</title></path>
 <text x='1122' y='635' transform='rotate(0 1122,635)' class='relName'>id_division</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_insurance_type' == -->
-<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_insurance_type'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_insurance_type','risk.fact_risk_counterparty_exposure.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_insurance_type','risk.fact_risk_counterparty_exposure.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 1168,624L 1096,624Q 1088,624 1088,632L 1088,1048Q 1088,1056 1080,1056L 1056,1056' >
+<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_insurance_type'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_insurance_type','risk.fact_risk_counterparty_exposure.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_insurance_type','risk.fact_risk_counterparty_exposure.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 1168,624L 1080,624Q 1072,624 1072,632L 1072,1048Q 1072,1056 1064,1056L 1056,1056' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_insurance_type
 fact_risk_counterparty_exposure ref lk_insurance_type ( id_insurance_type )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1168,624L 1096,624Q 1088,624 1088,632L 1088,1048Q 1088,1056 1080,1056L 1056,1056' ><title>Fk fk_fact_risk_counterparty_exposure_lk_insurance_type
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1168,624L 1080,624Q 1072,624 1072,632L 1072,1048Q 1072,1056 1064,1056L 1056,1056' ><title>Fk fk_fact_risk_counterparty_exposure_lk_insurance_type
 fact_risk_counterparty_exposure ref lk_insurance_type ( id_insurance_type )</title></path>
 <text x='1081' y='619' transform='rotate(0 1081,619)' class='relName'>id_insurance_type</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_legal_entity' == -->
-<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_legal_entity'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_legal_entity','risk.fact_risk_counterparty_exposure.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_legal_entity','risk.fact_risk_counterparty_exposure.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 1216,672L 1216,728Q 1216,736 1208,736L 888,736Q 880,736 880,744L 880,808Q 880,816 888,816L 912,816' >
+<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_legal_entity'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_legal_entity','risk.fact_risk_counterparty_exposure.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_legal_entity','risk.fact_risk_counterparty_exposure.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 1168,608L 1032,608Q 1024,608 1024,616L 1024,784' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_legal_entity
 fact_risk_counterparty_exposure ref lk_legal_entity ( id_legal_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1216,672L 1216,728Q 1216,736 1208,736L 888,736Q 880,736 880,744L 880,808Q 880,816 888,816L 912,816' ><title>Fk fk_fact_risk_counterparty_exposure_lk_legal_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1168,608L 1032,608Q 1024,608 1024,616L 1024,784' ><title>Fk fk_fact_risk_counterparty_exposure_lk_legal_entity
 fact_risk_counterparty_exposure ref lk_legal_entity ( id_legal_entity )</title></path>
-<text x='1231' y='673' transform='rotate(90 1231,673)' class='relName'>id_legal_entity</text>
+<text x='1101' y='603' transform='rotate(0 1101,603)' class='relName'>id_legal_entity</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_portfolio' == -->
-<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_portfolio'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_portfolio','risk.fact_risk_counterparty_exposure.id_portfolio','moneo.lk_portfolio.id_portfolio'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_portfolio','risk.fact_risk_counterparty_exposure.id_portfolio','moneo.lk_portfolio.id_portfolio'])" transform='translate(8,0)' class='scene' d='M 1344,672L 1344,856Q 1344,864 1352,864L 1352,864Q 1360,864 1360,872L 1360,1096Q 1360,1104 1368,1104L 1384,1104Q 1392,1104 1392,1112L 1392,1528Q 1392,1536 1384,1536L 1264,1536' >
+<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_portfolio'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_portfolio','risk.fact_risk_counterparty_exposure.id_portfolio','moneo.lk_portfolio.id_portfolio'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_portfolio','risk.fact_risk_counterparty_exposure.id_portfolio','moneo.lk_portfolio.id_portfolio'])" transform='translate(8,0)' class='scene' d='M 1216,672L 1216,728Q 1216,736 1208,736L 1096,736Q 1088,736 1088,744L 1088,1544Q 1088,1552 1096,1552L 1136,1552' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_portfolio
 fact_risk_counterparty_exposure ref lk_portfolio ( id_portfolio )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1344,672L 1344,856Q 1344,864 1352,864L 1352,864Q 1360,864 1360,872L 1360,1096Q 1360,1104 1368,1104L 1384,1104Q 1392,1104 1392,1112L 1392,1528Q 1392,1536 1384,1536L 1264,1536' ><title>Fk fk_fact_risk_counterparty_exposure_lk_portfolio
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1216,672L 1216,728Q 1216,736 1208,736L 1096,736Q 1088,736 1088,744L 1088,1544Q 1088,1552 1096,1552L 1136,1552' ><title>Fk fk_fact_risk_counterparty_exposure_lk_portfolio
 fact_risk_counterparty_exposure ref lk_portfolio ( id_portfolio )</title></path>
-<text x='1359' y='673' transform='rotate(90 1359,673)' class='relName'>id_portfolio</text>
+<text x='1231' y='673' transform='rotate(90 1231,673)' class='relName'>id_portfolio</text>
+<!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_product_line' == -->
+<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_product_line'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_product_line','risk.fact_risk_counterparty_exposure.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_product_line','risk.fact_risk_counterparty_exposure.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 1344,672L 1344,856Q 1344,864 1352,864L 1352,864Q 1360,864 1360,872L 1360,1096Q 1360,1104 1368,1104L 1384,1104Q 1392,1104 1392,1112L 1392,1240Q 1392,1248 1384,1248L 1288,1248Q 1280,1248 1280,1256L 1280,1264' >
+	<title>Fk fk_fact_risk_counterparty_exposure_lk_product_line
+fact_risk_counterparty_exposure ref lk_product_line ( id_product_line )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1344,672L 1344,856Q 1344,864 1352,864L 1352,864Q 1360,864 1360,872L 1360,1096Q 1360,1104 1368,1104L 1384,1104Q 1392,1104 1392,1112L 1392,1240Q 1392,1248 1384,1248L 1288,1248Q 1280,1248 1280,1256L 1280,1264' ><title>Fk fk_fact_risk_counterparty_exposure_lk_product_line
+fact_risk_counterparty_exposure ref lk_product_line ( id_product_line )</title></path>
+<text x='1359' y='673' transform='rotate(90 1359,673)' class='relName'>id_product_line</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_rating' == -->
 <path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_rating'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_rating','risk.fact_risk_counterparty_exposure.id_rating_reinsurer','moneo.lk_rating.id_rating'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_rating','risk.fact_risk_counterparty_exposure.id_rating_reinsurer','moneo.lk_rating.id_rating'])" transform='translate(8,0)' class='scene' d='M 1360,288L 1360,232Q 1360,224 1368,224L 1704,224Q 1712,224 1712,216L 1712,208' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_rating
@@ -662,13 +678,13 @@ fact_risk_counterparty_exposure ref lk_reinsurer ( id_reinsurer )</title>
 fact_risk_counterparty_exposure ref lk_reinsurer ( id_reinsurer )</title></path>
 <text x='1203' y='283' transform='rotate(270 1203,283)' class='relName'>id_reinsurer</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_top_entity' == -->
-<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_top_entity'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_top_entity','risk.fact_risk_counterparty_exposure.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_top_entity','risk.fact_risk_counterparty_exposure.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 1168,512L 680,512Q 672,512 672,520L 672,760Q 672,768 680,768L 680,768Q 688,768 688,776L 688,784' >
+<path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_top_entity'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_top_entity','risk.fact_risk_counterparty_exposure.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_top_entity','risk.fact_risk_counterparty_exposure.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 1168,528L 680,528Q 672,528 672,536L 672,760Q 672,768 680,768L 680,768Q 688,768 688,776L 688,784' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_top_entity
 fact_risk_counterparty_exposure ref lk_top_entity ( id_top_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1168,512L 680,512Q 672,512 672,520L 672,760Q 672,768 680,768L 680,768Q 688,768 688,776L 688,784' ><title>Fk fk_fact_risk_counterparty_exposure_lk_top_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1168,528L 680,528Q 672,528 672,536L 672,760Q 672,768 680,768L 680,768Q 688,768 688,776L 688,784' ><title>Fk fk_fact_risk_counterparty_exposure_lk_top_entity
 fact_risk_counterparty_exposure ref lk_top_entity ( id_top_entity )</title></path>
-<text x='1108' y='507' transform='rotate(0 1108,507)' class='relName'>id_top_entity</text>
+<text x='1108' y='523' transform='rotate(0 1108,523)' class='relName'>id_top_entity</text>
 <!-- == Fk 'fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_day' == -->
 <path id='fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_day'  onmouseover="hghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_day','risk.fact_risk_counterparty_exposure.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_counterparty_exposure_fk_fact_risk_counterparty_exposure_lk_day','risk.fact_risk_counterparty_exposure.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 1376,656L 1624,656Q 1632,656 1632,664L 1632,1064Q 1632,1072 1624,1072L 1536,1072' >
 	<title>Fk fk_fact_risk_counterparty_exposure_lk_day
@@ -678,11 +694,11 @@ fact_risk_counterparty_exposure ref lk_day ( id_day )</title>
 fact_risk_counterparty_exposure ref lk_day ( id_day )</title></path>
 <text x='1385' y='651' transform='rotate(0 1385,651)' class='relName'>id_day</text>
 <!-- == Fk 'fact_risk_holdings_fk_fact_risk_holdings_lk_block' == -->
-<path id='fact_risk_holdings_fk_fact_risk_holdings_lk_block'  onmouseover="hghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_block','risk.fact_risk_holdings.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_block','risk.fact_risk_holdings.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1664,960L 600,960Q 592,960 592,952L 592,616Q 592,608 600,608L 688,608' >
+<path id='fact_risk_holdings_fk_fact_risk_holdings_lk_block'  onmouseover="hghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_block','risk.fact_risk_holdings.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_block','risk.fact_risk_holdings.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1664,960L 632,960Q 624,960 624,952L 624,632Q 624,624 632,624L 688,624' >
 	<title>Fk fk_fact_risk_holdings_lk_block
 fact_risk_holdings ref lk_block ( id_block )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1664,960L 600,960Q 592,960 592,952L 592,616Q 592,608 600,608L 688,608' ><title>Fk fk_fact_risk_holdings_lk_block
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1664,960L 632,960Q 624,960 624,952L 624,632Q 624,624 632,624L 688,624' ><title>Fk fk_fact_risk_holdings_lk_block
 fact_risk_holdings ref lk_block ( id_block )</title></path>
 <text x='1629' y='955' transform='rotate(0 1629,955)' class='relName'>id_block</text>
 <!-- == Fk 'fact_risk_holdings_fk_fact_risk_holdings_lk_channel' == -->
@@ -701,14 +717,22 @@ fact_risk_holdings ref lk_company ( id_company )</title>
 <path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1664,976L 1304,976Q 1296,976 1296,968L 1296,912' ><title>Fk fk_fact_risk_holdings_lk_company
 fact_risk_holdings ref lk_company ( id_company )</title></path>
 <text x='1609' y='971' transform='rotate(0 1609,971)' class='relName'>id_company</text>
+<!-- == Fk 'fact_risk_holdings_fk_fact_risk_holdings_lk_portfolio' == -->
+<path id='fact_risk_holdings_fk_fact_risk_holdings_lk_portfolio'  onmouseover="hghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_portfolio','risk.fact_risk_holdings.id_portfolio','moneo.lk_portfolio.id_portfolio'])" onmouseout="uhghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_portfolio','risk.fact_risk_holdings.id_portfolio','moneo.lk_portfolio.id_portfolio'])" transform='translate(8,0)' class='scene' d='M 1696,1168L 1696,1672Q 1696,1680 1688,1680L 1304,1680Q 1296,1680 1296,1688L 1296,1704Q 1296,1712 1288,1712L 1208,1712Q 1200,1712 1200,1704L 1200,1632' >
+	<title>Fk fk_fact_risk_holdings_lk_portfolio
+fact_risk_holdings ref lk_portfolio ( id_portfolio )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1696,1168L 1696,1672Q 1696,1680 1688,1680L 1304,1680Q 1296,1680 1296,1688L 1296,1704Q 1296,1712 1288,1712L 1208,1712Q 1200,1712 1200,1704L 1200,1632' ><title>Fk fk_fact_risk_holdings_lk_portfolio
+fact_risk_holdings ref lk_portfolio ( id_portfolio )</title></path>
+<text x='1711' y='1169' transform='rotate(90 1711,1169)' class='relName'>id_portfolio</text>
 <!-- == Fk 'fact_risk_holdings_fk_fact_risk_holdings_lk_product_line' == -->
-<path id='fact_risk_holdings_fk_fact_risk_holdings_lk_product_line'  onmouseover="hghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_product_line','risk.fact_risk_holdings.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_product_line','risk.fact_risk_holdings.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 1696,1168L 1696,1336Q 1696,1344 1688,1344L 1296,1344' >
+<path id='fact_risk_holdings_fk_fact_risk_holdings_lk_product_line'  onmouseover="hghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_product_line','risk.fact_risk_holdings.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_product_line','risk.fact_risk_holdings.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 1712,1168L 1712,1320Q 1712,1328 1704,1328L 1296,1328' >
 	<title>Fk fk_fact_risk_holdings_lk_product_line
 fact_risk_holdings ref lk_product_line ( id_product_line )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1696,1168L 1696,1336Q 1696,1344 1688,1344L 1296,1344' ><title>Fk fk_fact_risk_holdings_lk_product_line
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1712,1168L 1712,1320Q 1712,1328 1704,1328L 1296,1328' ><title>Fk fk_fact_risk_holdings_lk_product_line
 fact_risk_holdings ref lk_product_line ( id_product_line )</title></path>
-<text x='1711' y='1169' transform='rotate(90 1711,1169)' class='relName'>id_product_line</text>
+<text x='1727' y='1169' transform='rotate(90 1727,1169)' class='relName'>id_product_line</text>
 <!-- == Fk 'fact_risk_holdings_fk_fact_risk_holdings_lk_day' == -->
 <path id='fact_risk_holdings_fk_fact_risk_holdings_lk_day'  onmouseover="hghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_day','risk.fact_risk_holdings.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_holdings_fk_fact_risk_holdings_lk_day','risk.fact_risk_holdings.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 1664,1104L 1536,1104' >
 	<title>Fk fk_fact_risk_holdings_lk_day
@@ -725,14 +749,14 @@ fact_risk_operational ref lk_risk_backlog ( id_backlog )</title>
 <path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2384,2096L 2496,2096' ><title>Fk fk_fact_risk_operational_lk_risk_backlog
 fact_risk_operational ref lk_risk_backlog ( id_backlog )</title></path>
 <text x='2393' y='2091' transform='rotate(0 2393,2091)' class='relName'>id_backlog</text>
-<!-- == Fk 'fact_risk_operational_fk_fact_risk_operational_lk_day' == -->
-<path id='fact_risk_operational_fk_fact_risk_operational_lk_day'  onmouseover="hghl(['fact_risk_operational_fk_fact_risk_operational_lk_day','risk.fact_risk_operational.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_operational_fk_fact_risk_operational_lk_day','risk.fact_risk_operational.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 2240,2208L 2240,2232Q 2240,2240 2232,2240L 1864,2240Q 1856,2240 1856,2232L 1856,1304Q 1856,1296 1848,1296L 1640,1296Q 1632,1296 1632,1288L 1632,1176Q 1632,1168 1624,1168L 1536,1168' >
-	<title>Fk fk_fact_risk_operational_lk_day
-fact_risk_operational ref lk_day ( id_day )</title>
+<!-- == Fk 'fact_risk_operational_fk_fact_risk_operational_lk_product_line' == -->
+<path id='fact_risk_operational_fk_fact_risk_operational_lk_product_line'  onmouseover="hghl(['fact_risk_operational_fk_fact_risk_operational_lk_product_line','risk.fact_risk_operational.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_operational_fk_fact_risk_operational_lk_product_line','risk.fact_risk_operational.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 2240,2208L 2240,2232Q 2240,2240 2232,2240L 1656,2240Q 1648,2240 1648,2232L 1648,1400Q 1648,1392 1640,1392L 1416,1392Q 1408,1392 1408,1384L 1408,1320Q 1408,1312 1400,1312L 1296,1312' >
+	<title>Fk fk_fact_risk_operational_lk_product_line
+fact_risk_operational ref lk_product_line ( id_product_line )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 2240,2208L 2240,2232Q 2240,2240 2232,2240L 1864,2240Q 1856,2240 1856,2232L 1856,1304Q 1856,1296 1848,1296L 1640,1296Q 1632,1296 1632,1288L 1632,1176Q 1632,1168 1624,1168L 1536,1168' ><title>Fk fk_fact_risk_operational_lk_day
-fact_risk_operational ref lk_day ( id_day )</title></path>
-<text x='2255' y='2209' transform='rotate(90 2255,2209)' class='relName'>id_day</text>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2240,2208L 2240,2232Q 2240,2240 2232,2240L 1656,2240Q 1648,2240 1648,2232L 1648,1400Q 1648,1392 1640,1392L 1416,1392Q 1408,1392 1408,1384L 1408,1320Q 1408,1312 1400,1312L 1296,1312' ><title>Fk fk_fact_risk_operational_lk_product_line
+fact_risk_operational ref lk_product_line ( id_product_line )</title></path>
+<text x='2255' y='2209' transform='rotate(90 2255,2209)' class='relName'>id_product_line</text>
 <!-- == Fk 'fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_asset_class' == -->
 <path id='fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_asset_class'  onmouseover="hghl(['fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_asset_class','risk.fact_risk_asset_credit.id_asset_class','moneo.lk_asset_class.id_asset_class'])" onmouseout="uhghl(['fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_asset_class','risk.fact_risk_asset_credit.id_asset_class','moneo.lk_asset_class.id_asset_class'])" transform='translate(8,0)' class='scene' d='M 1808,320L 1808,312Q 1808,304 1816,304L 2264,304Q 2272,304 2272,312L 2272,320' >
 	<title>Fk fk_fact_risk_asset_credit_lk_asset_class
@@ -782,11 +806,11 @@ fact_risk_asset_credit ref lk_insurance_type ( id_insurance_type )</title>
 fact_risk_asset_credit ref lk_insurance_type ( id_insurance_type )</title></path>
 <text x='1743' y='673' transform='rotate(90 1743,673)' class='relName'>id_insurance_type</text>
 <!-- == Fk 'fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_legal_entity' == -->
-<path id='fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_legal_entity'  onmouseover="hghl(['fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_legal_entity','risk.fact_risk_asset_credit.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_legal_entity','risk.fact_risk_asset_credit.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 1664,336L 1416,336Q 1408,336 1408,328L 1408,264Q 1408,256 1400,256L 1080,256Q 1072,256 1072,264L 1072,808Q 1072,816 1064,816L 1056,816' >
+<path id='fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_legal_entity'  onmouseover="hghl(['fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_legal_entity','risk.fact_risk_asset_credit.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_legal_entity','risk.fact_risk_asset_credit.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 1664,336L 1416,336Q 1408,336 1408,328L 1408,264Q 1408,256 1400,256L 1048,256Q 1040,256 1040,264L 1040,784' >
 	<title>Fk fk_fact_risk_asset_credit_lk_legal_entity
 fact_risk_asset_credit ref lk_legal_entity ( id_legal_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1664,336L 1416,336Q 1408,336 1408,328L 1408,264Q 1408,256 1400,256L 1080,256Q 1072,256 1072,264L 1072,808Q 1072,816 1064,816L 1056,816' ><title>Fk fk_fact_risk_asset_credit_lk_legal_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1664,336L 1416,336Q 1408,336 1408,328L 1408,264Q 1408,256 1400,256L 1048,256Q 1040,256 1040,264L 1040,784' ><title>Fk fk_fact_risk_asset_credit_lk_legal_entity
 fact_risk_asset_credit ref lk_legal_entity ( id_legal_entity )</title></path>
 <text x='1597' y='331' transform='rotate(0 1597,331)' class='relName'>id_legal_entity</text>
 <!-- == Fk 'fact_risk_asset_credit_fk_fact_risk_asset_credit_lk_portfolio' == -->
@@ -886,11 +910,11 @@ fact_risk_agency_sales ref lk_insurance_type ( id_insurance_type )</title>
 fact_risk_agency_sales ref lk_insurance_type ( id_insurance_type )</title></path>
 <text x='857' y='395' transform='rotate(0 857,395)' class='relName'>id_insurance_type</text>
 <!-- == Fk 'fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_legal_entity' == -->
-<path id='fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_legal_entity'  onmouseover="hghl(['fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_legal_entity','risk.fact_risk_agency_sales.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_legal_entity','risk.fact_risk_agency_sales.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 848,384L 888,384Q 896,384 896,392L 896,792Q 896,800 904,800L 912,800' >
+<path id='fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_legal_entity'  onmouseover="hghl(['fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_legal_entity','risk.fact_risk_agency_sales.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_legal_entity','risk.fact_risk_agency_sales.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 848,384L 936,384Q 944,384 944,392L 944,784' >
 	<title>Fk fk_fact_risk_agency_sales_lk_legal_entity
 fact_risk_agency_sales ref lk_legal_entity ( id_legal_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 848,384L 888,384Q 896,384 896,392L 896,792Q 896,800 904,800L 912,800' ><title>Fk fk_fact_risk_agency_sales_lk_legal_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 848,384L 936,384Q 944,384 944,392L 944,784' ><title>Fk fk_fact_risk_agency_sales_lk_legal_entity
 fact_risk_agency_sales ref lk_legal_entity ( id_legal_entity )</title></path>
 <text x='857' y='379' transform='rotate(0 857,379)' class='relName'>id_legal_entity</text>
 <!-- == Fk 'fact_risk_agency_sales_fk_fact_risk_agency_sales_lk_portfolio' == -->
@@ -933,52 +957,44 @@ fact_risk_interest_rate ref lk_risk_interest_scenario ( id_risk_interest_scenari
 <path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 2080,2208L 2080,2328Q 2080,2336 2088,2336L 2208,2336' ><title>Fk fk_fact_risk_interest_rate_lk_risk_interest_scenario
 fact_risk_interest_rate ref lk_risk_interest_scenario ( id_risk_interest_scenario )</title></path>
 <text x='2095' y='2209' transform='rotate(90 2095,2209)' class='relName'>id_risk_interest_scenario</text>
+<!-- == Fk 'fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_block' == -->
+<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_block'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_block','risk.fact_risk_interest_rate.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_block','risk.fact_risk_interest_rate.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1936,2208L 1936,2216Q 1936,2224 1928,2224L 1288,2224Q 1280,2224 1280,2216L 1280,2152Q 1280,2144 1272,2144L 888,2144Q 880,2144 880,2136L 880,1192Q 880,1184 872,1184L 616,1184Q 608,1184 608,1176L 608,616Q 608,608 616,608L 688,608' >
+	<title>Fk fk_fact_risk_interest_rate_lk_block
+fact_risk_interest_rate ref lk_block ( id_block )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1936,2208L 1936,2216Q 1936,2224 1928,2224L 1288,2224Q 1280,2224 1280,2216L 1280,2152Q 1280,2144 1272,2144L 888,2144Q 880,2144 880,2136L 880,1192Q 880,1184 872,1184L 616,1184Q 608,1184 608,1176L 608,616Q 608,608 616,608L 688,608' ><title>Fk fk_fact_risk_interest_rate_lk_block
+fact_risk_interest_rate ref lk_block ( id_block )</title></path>
+<text x='1951' y='2209' transform='rotate(90 1951,2209)' class='relName'>id_block</text>
 <!-- == Fk 'fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_insurance_type' == -->
-<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_insurance_type'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_insurance_type','risk.fact_risk_interest_rate.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_insurance_type','risk.fact_risk_interest_rate.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 1936,2208L 1936,2216Q 1936,2224 1928,2224L 1304,2224Q 1296,2224 1296,2216L 1296,1720Q 1296,1712 1288,1712L 888,1712Q 880,1712 880,1704L 880,1176Q 880,1168 888,1168L 904,1168Q 912,1168 912,1160L 912,1152' >
+<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_insurance_type'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_insurance_type','risk.fact_risk_interest_rate.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_insurance_type','risk.fact_risk_interest_rate.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 1904,2016L 1576,2016Q 1568,2016 1568,2024L 1568,2200Q 1568,2208 1560,2208L 1304,2208Q 1296,2208 1296,2200L 1296,2168Q 1296,2160 1288,2160L 824,2160Q 816,2160 816,2152L 816,1480Q 816,1472 824,1472L 904,1472Q 912,1472 912,1464L 912,1152' >
 	<title>Fk fk_fact_risk_interest_rate_lk_insurance_type
 fact_risk_interest_rate ref lk_insurance_type ( id_insurance_type )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1936,2208L 1936,2216Q 1936,2224 1928,2224L 1304,2224Q 1296,2224 1296,2216L 1296,1720Q 1296,1712 1288,1712L 888,1712Q 880,1712 880,1704L 880,1176Q 880,1168 888,1168L 904,1168Q 912,1168 912,1160L 912,1152' ><title>Fk fk_fact_risk_interest_rate_lk_insurance_type
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1904,2016L 1576,2016Q 1568,2016 1568,2024L 1568,2200Q 1568,2208 1560,2208L 1304,2208Q 1296,2208 1296,2200L 1296,2168Q 1296,2160 1288,2160L 824,2160Q 816,2160 816,2152L 816,1480Q 816,1472 824,1472L 904,1472Q 912,1472 912,1464L 912,1152' ><title>Fk fk_fact_risk_interest_rate_lk_insurance_type
 fact_risk_interest_rate ref lk_insurance_type ( id_insurance_type )</title></path>
-<text x='1951' y='2209' transform='rotate(90 1951,2209)' class='relName'>id_insurance_type</text>
-<!-- == Fk 'fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_portfolio' == -->
-<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_portfolio'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_portfolio','risk.fact_risk_interest_rate.id_portfolio','moneo.lk_portfolio.id_portfolio'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_portfolio','risk.fact_risk_interest_rate.id_portfolio','moneo.lk_portfolio.id_portfolio'])" transform='translate(8,0)' class='scene' d='M 1904,2016L 1576,2016Q 1568,2016 1568,2024L 1568,2200Q 1568,2208 1560,2208L 1288,2208Q 1280,2208 1280,2200L 1280,2152Q 1280,2144 1272,2144L 1080,2144Q 1072,2144 1072,2136L 1072,1608Q 1072,1600 1080,1600L 1136,1600' >
-	<title>Fk fk_fact_risk_interest_rate_lk_portfolio
-fact_risk_interest_rate ref lk_portfolio ( id_portfolio )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1904,2016L 1576,2016Q 1568,2016 1568,2024L 1568,2200Q 1568,2208 1560,2208L 1288,2208Q 1280,2208 1280,2200L 1280,2152Q 1280,2144 1272,2144L 1080,2144Q 1072,2144 1072,2136L 1072,1608Q 1072,1600 1080,1600L 1136,1600' ><title>Fk fk_fact_risk_interest_rate_lk_portfolio
-fact_risk_interest_rate ref lk_portfolio ( id_portfolio )</title></path>
-<text x='1854' y='2011' transform='rotate(0 1854,2011)' class='relName'>id_portfolio</text>
+<text x='1817' y='2011' transform='rotate(0 1817,2011)' class='relName'>id_insurance_type</text>
 <!-- == Fk 'fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_product_line' == -->
-<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_product_line'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_product_line','risk.fact_risk_interest_rate.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_product_line','risk.fact_risk_interest_rate.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 1904,1888L 1640,1888Q 1632,1888 1632,1880L 1632,1400Q 1632,1392 1624,1392L 1416,1392Q 1408,1392 1408,1384L 1408,1336Q 1408,1328 1400,1328L 1296,1328' >
+<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_product_line'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_product_line','risk.fact_risk_interest_rate.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_product_line','risk.fact_risk_interest_rate.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 1904,1888L 1608,1888Q 1600,1888 1600,1880L 1600,1352Q 1600,1344 1592,1344L 1296,1344' >
 	<title>Fk fk_fact_risk_interest_rate_lk_product_line
 fact_risk_interest_rate ref lk_product_line ( id_product_line )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1904,1888L 1640,1888Q 1632,1888 1632,1880L 1632,1400Q 1632,1392 1624,1392L 1416,1392Q 1408,1392 1408,1384L 1408,1336Q 1408,1328 1400,1328L 1296,1328' ><title>Fk fk_fact_risk_interest_rate_lk_product_line
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1904,1888L 1608,1888Q 1600,1888 1600,1880L 1600,1352Q 1600,1344 1592,1344L 1296,1344' ><title>Fk fk_fact_risk_interest_rate_lk_product_line
 fact_risk_interest_rate ref lk_product_line ( id_product_line )</title></path>
 <text x='1832' y='1883' transform='rotate(0 1832,1883)' class='relName'>id_product_line</text>
-<!-- == Fk 'fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_top_entity' == -->
-<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_top_entity'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_top_entity','risk.fact_risk_interest_rate.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_top_entity','risk.fact_risk_interest_rate.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 1904,2176L 1608,2176Q 1600,2176 1600,2184L 1600,2232Q 1600,2240 1592,2240L 1320,2240Q 1312,2240 1312,2232L 1312,2168Q 1312,2160 1304,2160L 824,2160Q 816,2160 816,2152L 816,1592Q 816,1584 808,1584L 616,1584Q 608,1584 608,1576L 608,856Q 608,848 616,848L 656,848' >
-	<title>Fk fk_fact_risk_interest_rate_lk_top_entity
-fact_risk_interest_rate ref lk_top_entity ( id_top_entity )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1904,2176L 1608,2176Q 1600,2176 1600,2184L 1600,2232Q 1600,2240 1592,2240L 1320,2240Q 1312,2240 1312,2232L 1312,2168Q 1312,2160 1304,2160L 824,2160Q 816,2160 816,2152L 816,1592Q 816,1584 808,1584L 616,1584Q 608,1584 608,1576L 608,856Q 608,848 616,848L 656,848' ><title>Fk fk_fact_risk_interest_rate_lk_top_entity
-fact_risk_interest_rate ref lk_top_entity ( id_top_entity )</title></path>
-<text x='1844' y='2171' transform='rotate(0 1844,2171)' class='relName'>id_top_entity</text>
 <!-- == Fk 'fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_day' == -->
-<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_day'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_day','risk.fact_risk_interest_rate.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_day','risk.fact_risk_interest_rate.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 1904,1904L 1656,1904Q 1648,1904 1648,1896L 1648,1288Q 1648,1280 1640,1280L 1576,1280Q 1568,1280 1568,1272L 1568,1224Q 1568,1216 1560,1216L 1536,1216' >
+<path id='fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_day'  onmouseover="hghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_day','risk.fact_risk_interest_rate.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_interest_rate_fk_fact_risk_interest_rate_lk_day','risk.fact_risk_interest_rate.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 1904,1904L 1624,1904Q 1616,1904 1616,1896L 1616,1368Q 1616,1360 1608,1360L 1512,1360Q 1504,1360 1504,1352L 1504,1280' >
 	<title>Fk fk_fact_risk_interest_rate_lk_day
 fact_risk_interest_rate ref lk_day ( id_day )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1904,1904L 1656,1904Q 1648,1904 1648,1896L 1648,1288Q 1648,1280 1640,1280L 1576,1280Q 1568,1280 1568,1272L 1568,1224Q 1568,1216 1560,1216L 1536,1216' ><title>Fk fk_fact_risk_interest_rate_lk_day
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1904,1904L 1624,1904Q 1616,1904 1616,1896L 1616,1368Q 1616,1360 1608,1360L 1512,1360Q 1504,1360 1504,1352L 1504,1280' ><title>Fk fk_fact_risk_interest_rate_lk_day
 fact_risk_interest_rate ref lk_day ( id_day )</title></path>
 <text x='1878' y='1899' transform='rotate(0 1878,1899)' class='relName'>id_day</text>
 <!-- == Fk 'fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_block' == -->
-<path id='fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_block'  onmouseover="hghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_block','risk.fact_risk_geoanalysis.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_block','risk.fact_risk_geoanalysis.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1376,2128L 808,2128Q 800,2128 800,2136L 800,2136Q 800,2144 792,2144L 584,2144Q 576,2144 576,2136L 576,632Q 576,624 584,624L 688,624' >
+<path id='fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_block'  onmouseover="hghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_block','risk.fact_risk_geoanalysis.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_block','risk.fact_risk_geoanalysis.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 1376,2128L 808,2128Q 800,2128 800,2136L 800,2136Q 800,2144 792,2144L 584,2144Q 576,2144 576,2136L 576,648Q 576,640 584,640L 688,640' >
 	<title>Fk fk_fact_risk_risk_geoanalysis_lk_block
 fact_risk_geoanalysis ref lk_block ( id_block )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1376,2128L 808,2128Q 800,2128 800,2136L 800,2136Q 800,2144 792,2144L 584,2144Q 576,2144 576,2136L 576,632Q 576,624 584,624L 688,624' ><title>Fk fk_fact_risk_risk_geoanalysis_lk_block
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1376,2128L 808,2128Q 800,2128 800,2136L 800,2136Q 800,2144 792,2144L 584,2144Q 576,2144 576,2136L 576,648Q 576,640 584,640L 688,640' ><title>Fk fk_fact_risk_risk_geoanalysis_lk_block
 fact_risk_geoanalysis ref lk_block ( id_block )</title></path>
 <text x='1341' y='2123' transform='rotate(0 1341,2123)' class='relName'>id_block</text>
 <!-- == Fk 'fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_country' == -->
@@ -1006,13 +1022,13 @@ fact_risk_geoanalysis ref lk_portfolio ( id_portfolio )</title>
 fact_risk_geoanalysis ref lk_portfolio ( id_portfolio )</title></path>
 <text x='1326' y='1755' transform='rotate(0 1326,1755)' class='relName'>id_portfolio</text>
 <!-- == Fk 'fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_product_line' == -->
-<path id='fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_product_line'  onmouseover="hghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_product_line','risk.fact_risk_geoanalysis.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_product_line','risk.fact_risk_geoanalysis.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 1536,1744L 1536,1672Q 1536,1664 1544,1664L 1592,1664Q 1600,1664 1600,1656L 1600,1368Q 1600,1360 1592,1360L 1296,1360' >
+<path id='fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_product_line'  onmouseover="hghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_product_line','risk.fact_risk_geoanalysis.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_product_line','risk.fact_risk_geoanalysis.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 1408,1744L 1408,1672Q 1408,1664 1400,1664L 1400,1664Q 1392,1664 1392,1656L 1392,1368Q 1392,1360 1384,1360L 1296,1360' >
 	<title>Fk fk_fact_risk_risk_geoanalysis_lk_product_line
 fact_risk_geoanalysis ref lk_product_line ( id_product_line )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1536,1744L 1536,1672Q 1536,1664 1544,1664L 1592,1664Q 1600,1664 1600,1656L 1600,1368Q 1600,1360 1592,1360L 1296,1360' ><title>Fk fk_fact_risk_risk_geoanalysis_lk_product_line
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 1408,1744L 1408,1672Q 1408,1664 1400,1664L 1400,1664Q 1392,1664 1392,1656L 1392,1368Q 1392,1360 1384,1360L 1296,1360' ><title>Fk fk_fact_risk_risk_geoanalysis_lk_product_line
 fact_risk_geoanalysis ref lk_product_line ( id_product_line )</title></path>
-<text x='1539' y='1739' transform='rotate(270 1539,1739)' class='relName'>id_product_line</text>
+<text x='1411' y='1739' transform='rotate(270 1411,1739)' class='relName'>id_product_line</text>
 <!-- == Fk 'fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_state' == -->
 <path id='fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_state'  onmouseover="hghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_state','risk.fact_risk_geoanalysis.id_state','moneo.lk_state.id_state'])" onmouseout="uhghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_state','risk.fact_risk_geoanalysis.id_state','moneo.lk_state.id_state'])" transform='translate(8,0)' class='scene' d='M 1552,1776L 1664,1776' >
 	<title>Fk fk_fact_risk_risk_geoanalysis_lk_state
@@ -1030,43 +1046,43 @@ fact_risk_geoanalysis ref lk_top_entity ( id_top_entity )</title>
 fact_risk_geoanalysis ref lk_top_entity ( id_top_entity )</title></path>
 <text x='1423' y='2161' transform='rotate(90 1423,2161)' class='relName'>id_top_entity</text>
 <!-- == Fk 'fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_day' == -->
-<path id='fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_day'  onmouseover="hghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_day','risk.fact_risk_geoanalysis.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_day','risk.fact_risk_geoanalysis.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 1520,1744L 1520,1688Q 1520,1680 1528,1680L 1608,1680Q 1616,1680 1616,1672L 1616,1336Q 1616,1328 1608,1328L 1512,1328Q 1504,1328 1504,1320L 1504,1280' >
+<path id='fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_day'  onmouseover="hghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_day','risk.fact_risk_geoanalysis.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_geoanalysis_fk_fact_risk_risk_geoanalysis_lk_day','risk.fact_risk_geoanalysis.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 1536,1744L 1536,1672Q 1536,1664 1544,1664L 1624,1664Q 1632,1664 1632,1656L 1632,1224Q 1632,1216 1624,1216L 1536,1216' >
 	<title>Fk fk_fact_risk_risk_geoanalysis_lk_day
 fact_risk_geoanalysis ref lk_day ( id_day )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1520,1744L 1520,1688Q 1520,1680 1528,1680L 1608,1680Q 1616,1680 1616,1672L 1616,1336Q 1616,1328 1608,1328L 1512,1328Q 1504,1328 1504,1320L 1504,1280' ><title>Fk fk_fact_risk_risk_geoanalysis_lk_day
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1536,1744L 1536,1672Q 1536,1664 1544,1664L 1624,1664Q 1632,1664 1632,1656L 1632,1224Q 1632,1216 1624,1216L 1536,1216' ><title>Fk fk_fact_risk_risk_geoanalysis_lk_day
 fact_risk_geoanalysis ref lk_day ( id_day )</title></path>
-<text x='1523' y='1739' transform='rotate(270 1523,1739)' class='relName'>id_day</text>
+<text x='1539' y='1739' transform='rotate(270 1539,1739)' class='relName'>id_day</text>
 <!-- == Fk 'fact_risk_netamount_claims_fk_fact_risk_netamount_claims_lk_top_entity' == -->
-<path id='fact_risk_netamount_claims_fk_fact_risk_netamount_claims_lk_top_entity'  onmouseover="hghl(['fact_risk_netamount_claims_fk_fact_risk_netamount_claims_lk_top_entity','risk.fact_risk_netamount_claims.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_netamount_claims_fk_fact_risk_netamount_claims_lk_top_entity','risk.fact_risk_netamount_claims.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 192,1024L 192,1016Q 192,1008 200,1008L 696,1008Q 704,1008 704,1000L 704,912' >
+<path id='fact_risk_netamount_claims_fk_fact_risk_netamount_claims_lk_top_entity'  onmouseover="hghl(['fact_risk_netamount_claims_fk_fact_risk_netamount_claims_lk_top_entity','risk.fact_risk_netamount_claims.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_netamount_claims_fk_fact_risk_netamount_claims_lk_top_entity','risk.fact_risk_netamount_claims.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 192,1024L 192,984Q 192,976 200,976L 696,976Q 704,976 704,968L 704,912' >
 	<title>Fk fk_fact_risk_netamount_claims_lk_top_entity
 fact_risk_netamount_claims ref lk_top_entity ( id_top_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 192,1024L 192,1016Q 192,1008 200,1008L 696,1008Q 704,1008 704,1000L 704,912' ><title>Fk fk_fact_risk_netamount_claims_lk_top_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 192,1024L 192,984Q 192,976 200,976L 696,976Q 704,976 704,968L 704,912' ><title>Fk fk_fact_risk_netamount_claims_lk_top_entity
 fact_risk_netamount_claims ref lk_top_entity ( id_top_entity )</title></path>
 <text x='195' y='1019' transform='rotate(270 195,1019)' class='relName'>id_top_entity</text>
-<!-- == Fk 'fact_risk_investment_income_fk_fact_risk_investment_income_lk_company' == -->
-<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_company'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_company','risk.fact_risk_investment_income.id_company','moneo.lk_company.id_company'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_company','risk.fact_risk_investment_income.id_company','moneo.lk_company.id_company'])" transform='translate(8,0)' class='scene' d='M 624,1744L 624,984Q 624,976 632,976L 1192,976Q 1200,976 1200,968L 1200,912' >
-	<title>Fk fk_fact_risk_investment_income_lk_company
-fact_risk_investment_income ref lk_company ( id_company )</title>
+<!-- == Fk 'fact_risk_investment_income_fk_fact_risk_investment_income_lk_block' == -->
+<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_block'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_block','risk.fact_risk_investment_income.id_block','moneo.lk_block.id_block'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_block','risk.fact_risk_investment_income.id_block','moneo.lk_block.id_block'])" transform='translate(8,0)' class='scene' d='M 624,1744L 624,1208Q 624,1200 616,1200L 600,1200Q 592,1200 592,1192L 592,600Q 592,592 600,592L 688,592' >
+	<title>Fk fk_fact_risk_investment_income_lk_block
+fact_risk_investment_income ref lk_block ( id_block )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 624,1744L 624,984Q 624,976 632,976L 1192,976Q 1200,976 1200,968L 1200,912' ><title>Fk fk_fact_risk_investment_income_lk_company
-fact_risk_investment_income ref lk_company ( id_company )</title></path>
-<text x='627' y='1739' transform='rotate(270 627,1739)' class='relName'>id_company</text>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 624,1744L 624,1208Q 624,1200 616,1200L 600,1200Q 592,1200 592,1192L 592,600Q 592,592 600,592L 688,592' ><title>Fk fk_fact_risk_investment_income_lk_block
+fact_risk_investment_income ref lk_block ( id_block )</title></path>
+<text x='627' y='1739' transform='rotate(270 627,1739)' class='relName'>id_block</text>
 <!-- == Fk 'fact_risk_investment_income_fk_fact_risk_investment_income_lk_division' == -->
-<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_division'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_division','risk.fact_risk_investment_income.id_division','moneo.lk_division.id_division'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_division','risk.fact_risk_investment_income.id_division','moneo.lk_division.id_division'])" transform='translate(8,0)' class='scene' d='M 640,1744L 640,1192Q 640,1184 648,1184L 1192,1184Q 1200,1184 1200,1176L 1200,1152' >
+<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_division'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_division','risk.fact_risk_investment_income.id_division','moneo.lk_division.id_division'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_division','risk.fact_risk_investment_income.id_division','moneo.lk_division.id_division'])" transform='translate(8,0)' class='scene' d='M 640,1744L 640,1208Q 640,1200 648,1200L 1208,1200Q 1216,1200 1216,1192L 1216,1152' >
 	<title>Fk fk_fact_risk_investment_income_lk_division
 fact_risk_investment_income ref lk_division ( id_division )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 640,1744L 640,1192Q 640,1184 648,1184L 1192,1184Q 1200,1184 1200,1176L 1200,1152' ><title>Fk fk_fact_risk_investment_income_lk_division
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 640,1744L 640,1208Q 640,1200 648,1200L 1208,1200Q 1216,1200 1216,1192L 1216,1152' ><title>Fk fk_fact_risk_investment_income_lk_division
 fact_risk_investment_income ref lk_division ( id_division )</title></path>
 <text x='643' y='1739' transform='rotate(270 643,1739)' class='relName'>id_division</text>
 <!-- == Fk 'fact_risk_investment_income_fk_fact_risk_investment_income_lk_insurance_type' == -->
-<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_insurance_type'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_insurance_type','risk.fact_risk_investment_income.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_insurance_type','risk.fact_risk_investment_income.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 656,1744L 656,1608Q 656,1600 648,1600L 600,1600Q 592,1600 592,1592L 592,1208Q 592,1200 600,1200L 920,1200Q 928,1200 928,1192L 928,1152' >
+<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_insurance_type'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_insurance_type','risk.fact_risk_investment_income.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_insurance_type','risk.fact_risk_investment_income.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 656,1744L 656,1592Q 656,1584 648,1584L 616,1584Q 608,1584 608,1576L 608,1224Q 608,1216 616,1216L 920,1216Q 928,1216 928,1208L 928,1152' >
 	<title>Fk fk_fact_risk_investment_income_lk_insurance_type
 fact_risk_investment_income ref lk_insurance_type ( id_insurance_type )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 656,1744L 656,1608Q 656,1600 648,1600L 600,1600Q 592,1600 592,1592L 592,1208Q 592,1200 600,1200L 920,1200Q 928,1200 928,1192L 928,1152' ><title>Fk fk_fact_risk_investment_income_lk_insurance_type
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 656,1744L 656,1592Q 656,1584 648,1584L 616,1584Q 608,1584 608,1576L 608,1224Q 608,1216 616,1216L 920,1216Q 928,1216 928,1208L 928,1152' ><title>Fk fk_fact_risk_investment_income_lk_insurance_type
 fact_risk_investment_income ref lk_insurance_type ( id_insurance_type )</title></path>
 <text x='659' y='1739' transform='rotate(270 659,1739)' class='relName'>id_insurance_type</text>
 <!-- == Fk 'fact_risk_investment_income_fk_fact_risk_investment_income_lk_portfolio' == -->
@@ -1086,21 +1102,21 @@ fact_risk_investment_income ref lk_product ( id_product )</title>
 fact_risk_investment_income ref lk_product ( id_product )</title></path>
 <text x='755' y='1739' transform='rotate(270 755,1739)' class='relName'>id_product</text>
 <!-- == Fk 'fact_risk_investment_income_fk_fact_risk_investment_income_lk_product_line' == -->
-<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_product_line'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_product_line','risk.fact_risk_investment_income.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_product_line','risk.fact_risk_investment_income.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 736,1744L 736,1672Q 736,1664 744,1664L 1096,1664Q 1104,1664 1104,1656L 1104,1496Q 1104,1488 1112,1488L 1160,1488Q 1168,1488 1168,1480L 1168,1392' >
+<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_product_line'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_product_line','risk.fact_risk_investment_income.id_product_line','moneo.lk_product_line.id_product_line'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_product_line','risk.fact_risk_investment_income.id_product_line','moneo.lk_product_line.id_product_line'])" transform='translate(8,0)' class='scene' d='M 672,1744L 672,1608Q 672,1600 664,1600L 600,1600Q 592,1600 592,1592L 592,1368Q 592,1360 600,1360L 1136,1360' >
 	<title>Fk fk_fact_risk_investment_income_lk_product_line
 fact_risk_investment_income ref lk_product_line ( id_product_line )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 736,1744L 736,1672Q 736,1664 744,1664L 1096,1664Q 1104,1664 1104,1656L 1104,1496Q 1104,1488 1112,1488L 1160,1488Q 1168,1488 1168,1480L 1168,1392' ><title>Fk fk_fact_risk_investment_income_lk_product_line
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 672,1744L 672,1608Q 672,1600 664,1600L 600,1600Q 592,1600 592,1592L 592,1368Q 592,1360 600,1360L 1136,1360' ><title>Fk fk_fact_risk_investment_income_lk_product_line
 fact_risk_investment_income ref lk_product_line ( id_product_line )</title></path>
-<text x='739' y='1739' transform='rotate(270 739,1739)' class='relName'>id_product_line</text>
+<text x='675' y='1739' transform='rotate(270 675,1739)' class='relName'>id_product_line</text>
 <!-- == Fk 'fact_risk_investment_income_fk_fact_risk_investment_income_lk_day' == -->
-<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_day'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_day','risk.fact_risk_investment_income.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_day','risk.fact_risk_investment_income.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 784,1808L 1048,1808Q 1056,1808 1056,1800L 1056,1496Q 1056,1488 1048,1488L 1016,1488Q 1008,1488 1008,1480L 1008,1240Q 1008,1232 1016,1232L 1408,1232' >
+<path id='fact_risk_investment_income_fk_fact_risk_investment_income_lk_day'  onmouseover="hghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_day','risk.fact_risk_investment_income.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_investment_income_fk_fact_risk_investment_income_lk_day','risk.fact_risk_investment_income.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 736,1744L 736,1672Q 736,1664 744,1664L 1048,1664Q 1056,1664 1056,1656L 1056,1480Q 1056,1472 1048,1472L 1016,1472Q 1008,1472 1008,1464L 1008,1240Q 1008,1232 1016,1232L 1408,1232' >
 	<title>Fk fk_fact_risk_investment_income_lk_day
 fact_risk_investment_income ref lk_day ( id_day )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 784,1808L 1048,1808Q 1056,1808 1056,1800L 1056,1496Q 1056,1488 1048,1488L 1016,1488Q 1008,1488 1008,1480L 1008,1240Q 1008,1232 1016,1232L 1408,1232' ><title>Fk fk_fact_risk_investment_income_lk_day
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 736,1744L 736,1672Q 736,1664 744,1664L 1048,1664Q 1056,1664 1056,1656L 1056,1480Q 1056,1472 1048,1472L 1016,1472Q 1008,1472 1008,1464L 1008,1240Q 1008,1232 1016,1232L 1408,1232' ><title>Fk fk_fact_risk_investment_income_lk_day
 fact_risk_investment_income ref lk_day ( id_day )</title></path>
-<text x='793' y='1803' transform='rotate(0 793,1803)' class='relName'>id_day</text>
+<text x='739' y='1739' transform='rotate(270 739,1739)' class='relName'>id_day</text>
 <!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_agency' == -->
 <path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_agency'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_agency','risk.fact_risk_loss_analysis.id_agency','moneo.lk_agency.id_agency'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_agency','risk.fact_risk_loss_analysis.id_agency','moneo.lk_agency.id_agency'])" transform='translate(8,0)' class='scene' d='M 352,1568L 352,1656Q 352,1664 344,1664L 200,1664Q 192,1664 192,1672L 192,1680' >
 	<title>Fk fk_fact_risk_loss_analysis_lk_agency
@@ -1125,30 +1141,30 @@ fact_risk_loss_analysis ref lk_block ( id_block )</title>
 <path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 320,1040L 296,1040Q 288,1040 288,1032L 288,440Q 288,432 296,432L 648,432Q 656,432 656,440L 656,552Q 656,560 664,560L 688,560' ><title>Fk fk_fact_risk_loss_analysis_lk_block
 fact_risk_loss_analysis ref lk_block ( id_block )</title></path>
 <text x='285' y='1035' transform='rotate(0 285,1035)' class='relName'>id_block</text>
+<!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_company' == -->
+<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_company'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_company','risk.fact_risk_loss_analysis.id_company','moneo.lk_company.id_company'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_company','risk.fact_risk_loss_analysis.id_company','moneo.lk_company.id_company'])" transform='translate(8,0)' class='scene' d='M 528,1024L 528,936Q 528,928 536,928L 1016,928Q 1024,928 1024,936L 1024,968Q 1024,976 1032,976L 1192,976Q 1200,976 1200,968L 1200,912' >
+	<title>Fk fk_fact_risk_loss_analysis_lk_company
+fact_risk_loss_analysis ref lk_company ( id_company )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 528,1024L 528,936Q 528,928 536,928L 1016,928Q 1024,928 1024,936L 1024,968Q 1024,976 1032,976L 1192,976Q 1200,976 1200,968L 1200,912' ><title>Fk fk_fact_risk_loss_analysis_lk_company
+fact_risk_loss_analysis ref lk_company ( id_company )</title></path>
+<text x='531' y='1019' transform='rotate(270 531,1019)' class='relName'>id_company</text>
 <!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_division' == -->
-<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_division'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_division','risk.fact_risk_loss_analysis.id_division','moneo.lk_division.id_division'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_division','risk.fact_risk_loss_analysis.id_division','moneo.lk_division.id_division'])" transform='translate(8,0)' class='scene' d='M 544,1216L 1208,1216Q 1216,1216 1216,1208L 1216,1152' >
+<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_division'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_division','risk.fact_risk_loss_analysis.id_division','moneo.lk_division.id_division'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_division','risk.fact_risk_loss_analysis.id_division','moneo.lk_division.id_division'])" transform='translate(8,0)' class='scene' d='M 544,1232L 984,1232Q 992,1232 992,1224L 992,1192Q 992,1184 1000,1184L 1224,1184Q 1232,1184 1232,1176L 1232,1152' >
 	<title>Fk fk_fact_risk_loss_analysis_lk_division
 fact_risk_loss_analysis ref lk_division ( id_division )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,1216L 1208,1216Q 1216,1216 1216,1208L 1216,1152' ><title>Fk fk_fact_risk_loss_analysis_lk_division
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,1232L 984,1232Q 992,1232 992,1224L 992,1192Q 992,1184 1000,1184L 1224,1184Q 1232,1184 1232,1176L 1232,1152' ><title>Fk fk_fact_risk_loss_analysis_lk_division
 fact_risk_loss_analysis ref lk_division ( id_division )</title></path>
-<text x='553' y='1211' transform='rotate(0 553,1211)' class='relName'>id_division</text>
+<text x='553' y='1227' transform='rotate(0 553,1227)' class='relName'>id_division</text>
 <!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_insurance_type' == -->
-<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_insurance_type'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_insurance_type','risk.fact_risk_loss_analysis.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_insurance_type','risk.fact_risk_loss_analysis.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 544,1232L 936,1232Q 944,1232 944,1224L 944,1152' >
+<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_insurance_type'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_insurance_type','risk.fact_risk_loss_analysis.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_insurance_type','risk.fact_risk_loss_analysis.id_insurance_type','moneo.lk_insurance_type.id_insurance_type'])" transform='translate(8,0)' class='scene' d='M 544,1248L 936,1248Q 944,1248 944,1240L 944,1152' >
 	<title>Fk fk_fact_risk_loss_analysis_lk_insurance_type
 fact_risk_loss_analysis ref lk_insurance_type ( id_insurance_type )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,1232L 936,1232Q 944,1232 944,1224L 944,1152' ><title>Fk fk_fact_risk_loss_analysis_lk_insurance_type
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,1248L 936,1248Q 944,1248 944,1240L 944,1152' ><title>Fk fk_fact_risk_loss_analysis_lk_insurance_type
 fact_risk_loss_analysis ref lk_insurance_type ( id_insurance_type )</title></path>
-<text x='553' y='1227' transform='rotate(0 553,1227)' class='relName'>id_insurance_type</text>
-<!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_legal_entity' == -->
-<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_legal_entity'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_legal_entity','risk.fact_risk_loss_analysis.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_legal_entity','risk.fact_risk_loss_analysis.id_legal_entity','moneo.lk_legal_entity.id_legal_entity'])" transform='translate(8,0)' class='scene' d='M 528,1024L 528,936Q 528,928 536,928L 936,928Q 944,928 944,920L 944,912' >
-	<title>Fk fk_fact_risk_loss_analysis_lk_legal_entity
-fact_risk_loss_analysis ref lk_legal_entity ( id_legal_entity )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 528,1024L 528,936Q 528,928 536,928L 936,928Q 944,928 944,920L 944,912' ><title>Fk fk_fact_risk_loss_analysis_lk_legal_entity
-fact_risk_loss_analysis ref lk_legal_entity ( id_legal_entity )</title></path>
-<text x='531' y='1019' transform='rotate(270 531,1019)' class='relName'>id_legal_entity</text>
+<text x='553' y='1243' transform='rotate(0 553,1243)' class='relName'>id_insurance_type</text>
 <!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_product' == -->
 <path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_product'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_product','risk.fact_risk_loss_analysis.id_product','moneo.lk_product.id_product'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_product','risk.fact_risk_loss_analysis.id_product','moneo.lk_product.id_product'])" transform='translate(8,0)' class='scene' d='M 544,1424L 920,1424Q 928,1424 928,1432L 928,1504' >
 	<title>Fk fk_fact_risk_loss_analysis_lk_product
@@ -1174,21 +1190,21 @@ fact_risk_loss_analysis ref lk_territory ( id_territory )</title>
 fact_risk_loss_analysis ref lk_territory ( id_territory )</title></path>
 <text x='553' y='1451' transform='rotate(0 553,1451)' class='relName'>id_territory</text>
 <!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_top_entity' == -->
-<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_top_entity'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_top_entity','risk.fact_risk_loss_analysis.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_top_entity','risk.fact_risk_loss_analysis.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 544,1056L 584,1056Q 592,1056 592,1048L 592,1000Q 592,992 600,992L 680,992Q 688,992 688,984L 688,912' >
+<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_top_entity'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_top_entity','risk.fact_risk_loss_analysis.id_top_entity','moneo.lk_top_entity.id_top_entity'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_top_entity','risk.fact_risk_loss_analysis.id_top_entity','moneo.lk_top_entity.id_top_entity'])" transform='translate(8,0)' class='scene' d='M 512,1024L 512,952Q 512,944 520,944L 680,944Q 688,944 688,936L 688,912' >
 	<title>Fk fk_fact_risk_loss_analysis_lk_top_entity
 fact_risk_loss_analysis ref lk_top_entity ( id_top_entity )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 544,1056L 584,1056Q 592,1056 592,1048L 592,1000Q 592,992 600,992L 680,992Q 688,992 688,984L 688,912' ><title>Fk fk_fact_risk_loss_analysis_lk_top_entity
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'  class='dotted '  d='M 512,1024L 512,952Q 512,944 520,944L 680,944Q 688,944 688,936L 688,912' ><title>Fk fk_fact_risk_loss_analysis_lk_top_entity
 fact_risk_loss_analysis ref lk_top_entity ( id_top_entity )</title></path>
-<text x='553' y='1051' transform='rotate(0 553,1051)' class='relName'>id_top_entity</text>
+<text x='515' y='1019' transform='rotate(270 515,1019)' class='relName'>id_top_entity</text>
 <!-- == Fk 'fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_day' == -->
-<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_day'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_day','risk.fact_risk_loss_analysis.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_day','risk.fact_risk_loss_analysis.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 544,1248L 984,1248Q 992,1248 992,1240L 992,1208Q 992,1200 1000,1200L 1408,1200' >
+<path id='fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_day'  onmouseover="hghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_day','risk.fact_risk_loss_analysis.id_day','time.lk_day.id_day'])" onmouseout="uhghl(['fact_risk_loss_analysis_fk_fact_risk_loss_analysis_lk_day','risk.fact_risk_loss_analysis.id_day','time.lk_day.id_day'])" transform='translate(8,0)' class='scene' d='M 544,1264L 968,1264Q 976,1264 976,1256L 976,1224Q 976,1216 984,1216L 1408,1216' >
 	<title>Fk fk_fact_risk_loss_analysis_lk_day
 fact_risk_loss_analysis ref lk_day ( id_day )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 544,1248L 984,1248Q 992,1248 992,1240L 992,1208Q 992,1200 1000,1200L 1408,1200' ><title>Fk fk_fact_risk_loss_analysis_lk_day
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 544,1264L 968,1264Q 976,1264 976,1256L 976,1224Q 976,1216 984,1216L 1408,1216' ><title>Fk fk_fact_risk_loss_analysis_lk_day
 fact_risk_loss_analysis ref lk_day ( id_day )</title></path>
-<text x='553' y='1243' transform='rotate(0 553,1243)' class='relName'>id_day</text>
+<text x='553' y='1259' transform='rotate(0 553,1259)' class='relName'>id_day</text>
 <!-- == Table 'lk_risk_interest_scenario' == -->
 <rect class='entity' style='stroke:#1E5D8F' x='2224' y='2328' width='192' height='112' rx='8' ry='8' />
 <path d='M 2224 2356 L 2224 2336 Q 2224 2328 2232 2328 L 2408 2328 Q 2416 2328 2416 2336 L 2416 2356 L2224 2356 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
@@ -1339,94 +1355,6 @@ varchar(200)</title></a>
 <text x='797' y='628' text-anchor='end' class='colType'>t</text>  <a xlink:href='#moneo.lk_block_date_load'><text id='moneo.lk_block.date_load' x='723' y='647'>date_load</text><title>date_load
 timestamp default CURRENT_TIMESTAMP</title></a>
 <text x='797' y='644' text-anchor='end' class='colType'>d</text>
-<!-- == Table 'lk_capital_type' == -->
-<rect class='entity' style='stroke:#1E5D8F' x='1952' y='88' width='144' height='112' rx='8' ry='8' />
-<path d='M 1952 116 L 1952 96 Q 1952 88 1960 88 L 2088 88 Q 2096 88 2096 96 L 2096 116 L1952 116 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='1952' y='88' width='144' height='112' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#moneo.lk_capital_type'><text x='1980' y='107' >lk_capital_type</text><title>Table moneo.lk_capital_type</title></a>
-  <use id='nn' x='1954' y='125' xlink:href='#nn'/><use id='pk' x='1954' y='124' xlink:href='#pk'><title>Pk pk_lk_capital_type ( id_capital_type ) </title></use><a xlink:href='#moneo.lk_capital_type_id_capital_type'><text id='moneo.lk_capital_type.id_capital_type' x='1971' y='135' onmouseover="hghl(['fact_finance_balance_fk_fact_finance_balance_lk_capital_type','fin.fact_finance_balance.id_capital_type','fact_finance_capital_mgmt_fact_finance_capital_mgmt_lk_capital_type_fk','fin.fact_finance_capital_mgmt.id_capital_type','fact_finance_income_fk_fact_finance_income_lk_capital_type','fin.fact_finance_income.id_capital_type','fact_finance_income_budget_fk_fact_finance_income_budget_capital_type','fin.fact_finance_income_budget.id_capital_type','fact_finance_income_cost_fk_fact_finance_income_cost_capital_type','fin.fact_finance_income_cost.id_capital_type','fact_finance_income_stmt_fk_fact_finance_income_stmt_lk_capital_type','fin.fact_finance_income_stmt.id_capital_type'])" onmouseout="uhghl(['fact_finance_balance_fk_fact_finance_balance_lk_capital_type','fin.fact_finance_balance.id_capital_type','fact_finance_capital_mgmt_fact_finance_capital_mgmt_lk_capital_type_fk','fin.fact_finance_capital_mgmt.id_capital_type','fact_finance_income_fk_fact_finance_income_lk_capital_type','fin.fact_finance_income.id_capital_type','fact_finance_income_budget_fk_fact_finance_income_budget_capital_type','fin.fact_finance_income_budget.id_capital_type','fact_finance_income_cost_fk_fact_finance_income_cost_capital_type','fin.fact_finance_income_cost.id_capital_type','fact_finance_income_stmt_fk_fact_finance_income_stmt_lk_capital_type','fin.fact_finance_income_stmt.id_capital_type'])">id_capital_type</text><title>id_capital_type
-* integer generated always as identity</title></a>
-<a xlink:href='#moneo.lk_capital_type.id_capital_type'><use id='ref' x='2084' y='124' xlink:href='#ref'/><title>Referred by fact_finance_balance ( id_capital_type ) 
-Referred by fact_finance_capital_mgmt ( id_capital_type ) 
-Referred by fact_finance_income ( id_capital_type ) 
-Referred by fact_finance_income_budget ( id_capital_type ) 
-Referred by fact_finance_income_cost ( id_capital_type ) 
-Referred by fact_finance_income_stmt ( id_capital_type ) </title></a>
-  <a xlink:href='#moneo.lk_capital_type_cod_capital_type'><text id='moneo.lk_capital_type.cod_capital_type' x='1971' y='151'>cod_capital_type</text><title>cod_capital_type
-varchar(100)</title></a>
-<text x='2093' y='148' text-anchor='end' class='colType'>t</text>  <a xlink:href='#moneo.lk_capital_type_desc_capital_type'><text id='moneo.lk_capital_type.desc_capital_type' x='1971' y='167'>desc_capital_type</text><title>desc_capital_type
-varchar(200)</title></a>
-<text x='2093' y='164' text-anchor='end' class='colType'>t</text>  <a xlink:href='#moneo.lk_capital_type_date_load'><text id='moneo.lk_capital_type.date_load' x='1971' y='183'>date_load</text><title>date_load
-timestamp default CURRENT_TIMESTAMP</title></a>
-<text x='2093' y='180' text-anchor='end' class='colType'>d</text>
-<!-- == Table 'lk_cost_center' == -->
-<rect class='entity' style='stroke:#1E5D8F' x='928' y='552' width='128' height='112' rx='8' ry='8' />
-<path d='M 928 580 L 928 560 Q 928 552 936 552 L 1048 552 Q 1056 552 1056 560 L 1056 580 L928 580 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='928' y='552' width='128' height='112' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#moneo.lk_cost_center'><text x='949' y='571' >lk_cost_center</text><title>Table moneo.lk_cost_center</title></a>
-  <use id='nn' x='930' y='589' xlink:href='#nn'/><use id='pk' x='930' y='588' xlink:href='#pk'><title>Pk pk_lk_cost_center ( id_cost_center ) </title></use><a xlink:href='#moneo.lk_cost_center_id_cost_center'><text id='moneo.lk_cost_center.id_cost_center' x='947' y='599' onmouseover="hghl(['fact_alm_id_cost_center','act.fact_alm.id_cost_center','fact_capital_usages_id_cost_center','act.fact_capital_usages.id_cost_center','fact_crediting_rates_strategy_split_id_cost_center','act.fact_crediting_rates_strategy_split.id_cost_center','fact_inforce_mgmt_overview_id_cost_center','act.fact_inforce_mgmt_overview.id_cost_center','fact_maintenance_expenses_id_cost_center','act.fact_maintenance_expenses.id_cost_center','fact_mgmt_overview_shock_charge_year_id_cost_center','act.fact_mgmt_overview_shock_charge_year.id_cost_center','fact_portfolio_information_id_cost_center','act.fact_portfolio_information.id_cost_center','fact_profit_analysis_id_cost_center','act.fact_profit_analysis.id_cost_center','fact_spreads_id_cost_center','act.fact_spreads.id_cost_center','fact_funnel_fk_fact_funnel_lk_cost_center','dist.fact_funnel.id_cost_center','fact_marketing_fk_fact_marketing_lk_cost_center','dist.fact_marketing.id_cost_center','fact_policies_life_value_fk_fact_policies_lk_cost_center_1','dist.fact_policies_life_value.id_cost_center','fact_policies_overview_fk_fact_policies_lk_cost_center','dist.fact_policies_overview.id_cost_center','fact_policies_renewals_fk_fact_policies_lk_cost_center_0','dist.fact_policies_renewals.id_cost_center','fact_sales_fk_fact_sales_lk_cost_center','dist.fact_sales.id_cost_center','fact_teams_agent_fk_fact_policies_lk_cost_center_3','dist.fact_teams_agent.id_cost_center','fact_teams_channels_fk_fact_policies_lk_cost_center_4','dist.fact_teams_channels.id_cost_center','fact_teams_overview_fk_fact_policies_lk_cost_center_2','dist.fact_teams_overview.id_cost_center','fact_finance_balance_fk_fact_finance_balance_lk_cost_center','fin.fact_finance_balance.id_cost_center','fact_finance_capital_mgmt_fk_fact_finance_capital_mgmt_lk_cost_center','fin.fact_finance_capital_mgmt.id_cost_center','fact_finance_cashflow_acc_pay_rec_fk_fact_finance_cashflow_acc_pay_rec_lk_cost_center','fin.fact_finance_cashflow_acc_pay_rec.id_cost_center','fact_finance_cashflow_stmt_fk_fact_finance_cashflow_stmt_lk_cost_center','fin.fact_finance_cashflow_stmt.id_cost_center','fact_finance_deal_tracking_fk_fact_finance_deal_tracking_lk_cost_center','fin.fact_finance_deal_tracking.id_cost_center','fact_finance_financial_fact_financial_lk_cost_center_fk','fin.fact_finance_financial.id_cost_center','fact_finance_income_fk_fact_finance_income_lk_cost_center','fin.fact_finance_income.id_cost_center','fact_finance_income_budget_fk_fact_finance_income_budget_lk_cost_center','fin.fact_finance_income_budget.id_cost_center','fact_finance_income_cost_fk_fact_finance_income_cost_lk_cost_center','fin.fact_finance_income_cost.id_cost_center','fact_finance_income_stmt_fk_fact_finance_income_stmt_lk_cost_center','fin.fact_finance_income_stmt.id_cost_center','fact_finance_income_taxes_details_fact_finance_income_taxes_details_lk_cost_center_fk','fin.fact_finance_income_taxes_details.id_cost_center','fact_finance_reinsurance_fk_fact_finance_reinsurance_lk_cost_center','fin.fact_finance_reinsurance.id_cost_center'])" onmouseout="uhghl(['fact_alm_id_cost_center','act.fact_alm.id_cost_center','fact_capital_usages_id_cost_center','act.fact_capital_usages.id_cost_center','fact_crediting_rates_strategy_split_id_cost_center','act.fact_crediting_rates_strategy_split.id_cost_center','fact_inforce_mgmt_overview_id_cost_center','act.fact_inforce_mgmt_overview.id_cost_center','fact_maintenance_expenses_id_cost_center','act.fact_maintenance_expenses.id_cost_center','fact_mgmt_overview_shock_charge_year_id_cost_center','act.fact_mgmt_overview_shock_charge_year.id_cost_center','fact_portfolio_information_id_cost_center','act.fact_portfolio_information.id_cost_center','fact_profit_analysis_id_cost_center','act.fact_profit_analysis.id_cost_center','fact_spreads_id_cost_center','act.fact_spreads.id_cost_center','fact_funnel_fk_fact_funnel_lk_cost_center','dist.fact_funnel.id_cost_center','fact_marketing_fk_fact_marketing_lk_cost_center','dist.fact_marketing.id_cost_center','fact_policies_life_value_fk_fact_policies_lk_cost_center_1','dist.fact_policies_life_value.id_cost_center','fact_policies_overview_fk_fact_policies_lk_cost_center','dist.fact_policies_overview.id_cost_center','fact_policies_renewals_fk_fact_policies_lk_cost_center_0','dist.fact_policies_renewals.id_cost_center','fact_sales_fk_fact_sales_lk_cost_center','dist.fact_sales.id_cost_center','fact_teams_agent_fk_fact_policies_lk_cost_center_3','dist.fact_teams_agent.id_cost_center','fact_teams_channels_fk_fact_policies_lk_cost_center_4','dist.fact_teams_channels.id_cost_center','fact_teams_overview_fk_fact_policies_lk_cost_center_2','dist.fact_teams_overview.id_cost_center','fact_finance_balance_fk_fact_finance_balance_lk_cost_center','fin.fact_finance_balance.id_cost_center','fact_finance_capital_mgmt_fk_fact_finance_capital_mgmt_lk_cost_center','fin.fact_finance_capital_mgmt.id_cost_center','fact_finance_cashflow_acc_pay_rec_fk_fact_finance_cashflow_acc_pay_rec_lk_cost_center','fin.fact_finance_cashflow_acc_pay_rec.id_cost_center','fact_finance_cashflow_stmt_fk_fact_finance_cashflow_stmt_lk_cost_center','fin.fact_finance_cashflow_stmt.id_cost_center','fact_finance_deal_tracking_fk_fact_finance_deal_tracking_lk_cost_center','fin.fact_finance_deal_tracking.id_cost_center','fact_finance_financial_fact_financial_lk_cost_center_fk','fin.fact_finance_financial.id_cost_center','fact_finance_income_fk_fact_finance_income_lk_cost_center','fin.fact_finance_income.id_cost_center','fact_finance_income_budget_fk_fact_finance_income_budget_lk_cost_center','fin.fact_finance_income_budget.id_cost_center','fact_finance_income_cost_fk_fact_finance_income_cost_lk_cost_center','fin.fact_finance_income_cost.id_cost_center','fact_finance_income_stmt_fk_fact_finance_income_stmt_lk_cost_center','fin.fact_finance_income_stmt.id_cost_center','fact_finance_income_taxes_details_fact_finance_income_taxes_details_lk_cost_center_fk','fin.fact_finance_income_taxes_details.id_cost_center','fact_finance_reinsurance_fk_fact_finance_reinsurance_lk_cost_center','fin.fact_finance_reinsurance.id_cost_center'])">id_cost_center</text><title>id_cost_center
-* integer generated always as identity</title></a>
-<a xlink:href='#moneo.lk_cost_center.id_cost_center'><use id='ref' x='1044' y='588' xlink:href='#ref'/><title>Referred by fact_alm ( id_cost_center ) 
-Referred by fact_capital_usages ( id_cost_center ) 
-Referred by fact_crediting_rates_strategy_split ( id_cost_center ) 
-Referred by fact_inforce_mgmt_overview ( id_cost_center ) 
-Referred by fact_maintenance_expenses ( id_cost_center ) 
-Referred by fact_mgmt_overview_shock_charge_year ( id_cost_center ) 
-Referred by fact_portfolio_information ( id_cost_center ) 
-Referred by fact_profit_analysis ( id_cost_center ) 
-Referred by fact_spreads ( id_cost_center ) 
-Referred by fact_funnel ( id_cost_center ) 
-Referred by fact_marketing ( id_cost_center ) 
-Referred by fact_policies_life_value ( id_cost_center ) 
-Referred by fact_policies_overview ( id_cost_center ) 
-Referred by fact_policies_renewals ( id_cost_center ) 
-Referred by fact_sales ( id_cost_center ) 
-Referred by fact_teams_agent ( id_cost_center ) 
-Referred by fact_teams_channels ( id_cost_center ) 
-Referred by fact_teams_overview ( id_cost_center ) 
-Referred by fact_finance_balance ( id_cost_center ) 
-Referred by fact_finance_capital_mgmt ( id_cost_center ) 
-Referred by fact_finance_cashflow_acc_pay_rec ( id_cost_center ) 
-Referred by fact_finance_cashflow_stmt ( id_cost_center ) 
-Referred by fact_finance_deal_tracking ( id_cost_center ) 
-Referred by fact_finance_financial ( id_cost_center ) 
-Referred by fact_finance_income ( id_cost_center ) 
-Referred by fact_finance_income_budget ( id_cost_center ) 
-Referred by fact_finance_income_cost ( id_cost_center ) 
-Referred by fact_finance_income_stmt ( id_cost_center ) 
-Referred by fact_finance_income_taxes_details ( id_cost_center ) 
-Referred by fact_finance_reinsurance ( id_cost_center ) </title></a>
-  <a xlink:href='#moneo.lk_cost_center_cod_cost_center'><text id='moneo.lk_cost_center.cod_cost_center' x='947' y='615'>cod_cost_center</text><title>cod_cost_center
-varchar(100)</title></a>
-<text x='1053' y='612' text-anchor='end' class='colType'>t</text>  <a xlink:href='#moneo.lk_cost_center_desc_cost_center'><text id='moneo.lk_cost_center.desc_cost_center' x='947' y='631'>desc_cost_center</text><title>desc_cost_center
-varchar(200)</title></a>
-<text x='1053' y='628' text-anchor='end' class='colType'>t</text>  <a xlink:href='#moneo.lk_cost_center_date_load'><text id='moneo.lk_cost_center.date_load' x='947' y='647'>date_load</text><title>date_load
-timestamp default CURRENT_TIMESTAMP</title></a>
-<text x='1053' y='644' text-anchor='end' class='colType'>d</text>
-<!-- == Table 'lk_factor' == -->
-<rect class='entity' style='stroke:#1E5D8F' x='112' y='472' width='96' height='96' rx='8' ry='8' />
-<path d='M 112 500 L 112 480 Q 112 472 120 472 L 200 472 Q 208 472 208 480 L 208 500 L112 500 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='112' y='472' width='96' height='96' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#public.lk_factor'><text x='133' y='491' >lk_factor</text><title>Table public.lk_factor</title></a>
-  <use id='nn' x='114' y='509' xlink:href='#nn'/><use id='pk' x='114' y='508' xlink:href='#pk'><title>Pk pk_lk_factor ( id_factor ) </title></use><a xlink:href='#public.lk_factor_id_factor'><text id='public.lk_factor.id_factor' x='131' y='519'>id_factor</text><title>id_factor
-* integer</title></a>
-<text x='205' y='516' text-anchor='end' class='colType'>#</text>  <a xlink:href='#public.lk_factor_cod_factor'><text id='public.lk_factor.cod_factor' x='131' y='535'>cod_factor</text><title>cod_factor
-varchar(200)</title></a>
-<text x='205' y='532' text-anchor='end' class='colType'>t</text>  <a xlink:href='#public.lk_factor_desc_factor'><text id='public.lk_factor.desc_factor' x='131' y='551'>desc_factor</text><title>desc_factor
-varchar(200)</title></a>
-<text x='205' y='548' text-anchor='end' class='colType'>t</text>
-<!-- == Table 'lk_holding' == -->
-<rect class='entity' style='stroke:#1E5D8F' x='96' y='248' width='112' height='96' rx='8' ry='8' />
-<path d='M 96 276 L 96 256 Q 96 248 104 248 L 200 248 Q 208 248 208 256 L 208 276 L96 276 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='96' y='248' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#public.lk_holding'><text x='121' y='267' >lk_holding</text><title>Table public.lk_holding</title></a>
-  <use id='nn' x='98' y='285' xlink:href='#nn'/><use id='pk' x='98' y='284' xlink:href='#pk'><title>Pk pk_lk_holding ( id_holding ) </title></use><a xlink:href='#public.lk_holding_id_holding'><text id='public.lk_holding.id_holding' x='115' y='295'>id_holding</text><title>id_holding
-* integer</title></a>
-<text x='205' y='292' text-anchor='end' class='colType'>#</text>  <a xlink:href='#public.lk_holding_cod_holding'><text id='public.lk_holding.cod_holding' x='115' y='311'>cod_holding</text><title>cod_holding
-varchar(200)</title></a>
-<text x='205' y='308' text-anchor='end' class='colType'>t</text>  <a xlink:href='#public.lk_holding_desc_holding'><text id='public.lk_holding.desc_holding' x='115' y='327'>desc_holding</text><title>desc_holding
-varchar(200)</title></a>
-<text x='205' y='324' text-anchor='end' class='colType'>t</text>
 <!-- == Table 'lk_product_line' == -->
 <rect class='entity' style='stroke:#1E5D8F' x='1152' y='1272' width='144' height='112' rx='8' ry='8' />
 <path d='M 1152 1300 L 1152 1280 Q 1152 1272 1160 1272 L 1288 1272 Q 1296 1272 1296 1280 L 1296 1300 L1152 1300 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
@@ -6934,45 +6862,6 @@ timestamp default CURRENT_TIMESTAMP</title></a>
 </table></div></div>
 
 <br><br>
-<div class='card'><div class='card-body'><a name='moneo.lk_capital_type' onclick='window.scrollTo(1752, 96);return false;' style='cursor:pointer;'><h5 class='card-title'>Table lk_capital_type</h5></a>
-<table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
-<thead>
-<tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
-		<td><a name='moneo.lk_capital_type_id_capital_type'>id&#95;capital&#95;type</a></td>
-		<td> integer GENERATED ALWAYS AS IDENTITY  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='moneo.lk_capital_type_cod_capital_type'>cod&#95;capital&#95;type</a></td>
-		<td> varchar&#40;100&#41;  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='moneo.lk_capital_type_desc_capital_type'>desc&#95;capital&#95;type</a></td>
-		<td> varchar&#40;200&#41;  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='moneo.lk_capital_type_date_load'>date&#95;load</a></td>
-		<td> timestamp  DEFAULT CURRENT_TIMESTAMP </td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;lk&#95;capital&#95;type</td>
-		<td> ON id&#95;capital&#95;type</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table></div></div>
-
-<br><br>
 <div class='card'><div class='card-body'><a name='moneo.lk_channel' onclick='window.scrollTo(1240, 800);return false;' style='cursor:pointer;'><h5 class='card-title'>Table lk_channel</h5></a>
 <table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
@@ -7045,45 +6934,6 @@ timestamp default CURRENT_TIMESTAMP</title></a>
 <tr><th colspan='4'>Indexes</th></tr>
 	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;lk&#95;company</td>
 		<td> ON id&#95;company</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table></div></div>
-
-<br><br>
-<div class='card'><div class='card-body'><a name='moneo.lk_cost_center' onclick='window.scrollTo(728, 560);return false;' style='cursor:pointer;'><h5 class='card-title'>Table lk_cost_center</h5></a>
-<table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
-<thead>
-<tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
-		<td><a name='moneo.lk_cost_center_id_cost_center'>id&#95;cost&#95;center</a></td>
-		<td> integer GENERATED ALWAYS AS IDENTITY  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='moneo.lk_cost_center_cod_cost_center'>cod&#95;cost&#95;center</a></td>
-		<td> varchar&#40;100&#41;  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='moneo.lk_cost_center_desc_cost_center'>desc&#95;cost&#95;center</a></td>
-		<td> varchar&#40;200&#41;  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='moneo.lk_cost_center_date_load'>date&#95;load</a></td>
-		<td> timestamp  DEFAULT CURRENT_TIMESTAMP </td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;lk&#95;cost&#95;center</td>
-		<td> ON id&#95;cost&#95;center</td>
 		<td>  </td>
 	</tr>
 </tbody>
@@ -7271,72 +7121,6 @@ timestamp default CURRENT_TIMESTAMP</title></a>
 <tr><th colspan='4'>Indexes</th></tr>
 	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;lk&#95;division</td>
 		<td> ON id&#95;division</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table></div></div>
-
-<br><br>
-<div class='card'><div class='card-body'><a name='public.lk_factor' onclick='window.scrollTo(60, 480);return false;' style='cursor:pointer;'><h5 class='card-title'>Table lk_factor</h5></a>
-<table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
-<thead>
-<tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
-		<td><a name='public.lk_factor_id_factor'>id&#95;factor</a></td>
-		<td> integer  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='public.lk_factor_cod_factor'>cod&#95;factor</a></td>
-		<td> varchar&#40;200&#41;  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='public.lk_factor_desc_factor'>desc&#95;factor</a></td>
-		<td> varchar&#40;200&#41;  </td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;lk&#95;factor</td>
-		<td> ON id&#95;factor</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table></div></div>
-
-<br><br>
-<div class='card'><div class='card-body'><a name='public.lk_holding' onclick='window.scrollTo(60, 256);return false;' style='cursor:pointer;'><h5 class='card-title'>Table lk_holding</h5></a>
-<table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
-<thead>
-<tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
-		<td><a name='public.lk_holding_id_holding'>id&#95;holding</a></td>
-		<td> integer  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='public.lk_holding_cod_holding'>cod&#95;holding</a></td>
-		<td> varchar&#40;200&#41;  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><a name='public.lk_holding_desc_holding'>desc&#95;holding</a></td>
-		<td> varchar&#40;200&#41;  </td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;lk&#95;holding</td>
-		<td> ON id&#95;holding</td>
 		<td>  </td>
 	</tr>
 </tbody>
