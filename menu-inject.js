@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="moneo-navigation">
             <a href="index.html" class="home ${currentPage === 'index.html' || currentPage === '' ? 'active' : ''}">Home</a>
             <a href="dwh_finance.html" class="finance ${currentPage === 'dwh_finance.html' ? 'active' : ''}">Finance</a>
-            <a href="#" class="investment ${currentPage === 'dwh_investment.html' ? 'active' : ''}">Investment</a>
+            <a href="dwh_investment.html" class="investment ${currentPage === 'dwh_investment.html' ? 'active' : ''}">Investment</a>
             <a href="dwh_actuarial.html" class="actuarial ${currentPage === 'dwh_actuarial.html' ? 'active' : ''}">Actuarial</a>
-            <a href="#" class="distribution ${currentPage === 'dwh_distribution.html' ? 'active' : ''}">Distribution</a>
-            <a href="#" class="legal ${currentPage === 'dwh_legal.html' ? 'active' : ''}">Legal</a>
-            <a href="#" class="risk ${currentPage === 'dwh_risk.html' ? 'active' : ''}">Risk</a>
+            <a href="dwh_distribution.html" class="distribution ${currentPage === 'dwh_distribution.html' ? 'active' : ''}">Distribution</a>
+            <a href="dwh_legal.html" class="legal ${currentPage === 'dwh_legal.html' ? 'active' : ''}">Legal</a>
+            <a href="dwh_risk.html" class="risk ${currentPage === 'dwh_risk.html' ? 'active' : ''}">Risk</a>
             <a href="#" class="talent ${currentPage === 'dwh_talent.html' ? 'active' : ''}">Talent</a>
             <a href="#" class="operations ${currentPage === 'dwh_operations.html' ? 'active' : ''}">Operations</a>
             <a href="#" class="ceo ${currentPage === 'dwh_ceo.html' ? 'active' : ''}">CEO</a>
