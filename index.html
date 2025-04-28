@@ -317,14 +317,15 @@
 
     <script>
         // Replace with your personal access token (for testing only; use a backend in production)
-        const githubToken = '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';
-
+        //const githubToken = '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';
+/*
         fetch('https://api.github.com/repos/ayni-baf-prod/ayni-baf-prod.github.io/commits', {
             headers: {
                 Authorization: `token ${githubToken}`,
                 Accept: 'application/vnd.github.v3+json',
             },
-        })
+        }) */
+       fetch('https://api.github.com/repos/ayni-baf-prod/ayni-baf-prod.github.io/commits')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
