@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="#" class="talent ${currentPage === 'dwh_talent.html' ? 'active' : ''}">Talent</a>
             <a href="#" class="operations ${currentPage === 'dwh_operations.html' ? 'active' : ''}">Operations</a>
             <a href="#" class="ceo ${currentPage === 'dwh_ceo.html' ? 'active' : ''}">CEO</a>
+            <a href="dwh_dimensions.html" class="finance ${currentPage === 'dwh_dimensions.html' ? 'active' : ''}">Dimensional Tables</a>
+            <a href="dwh_facttables.html" class="investment ${currentPage === 'dwh_facttables.html' ? 'active' : ''}">Fact Tables</a>
         </div>
     `;
     
